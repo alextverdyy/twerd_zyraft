@@ -2802,7 +2802,7 @@ disp_spi: &spi3 {
 
 / { behaviors { smart_mouse: smart_mouse { compatible = "zmk,behavior-tri-state"; #binding-cells = <0>; bindings = <&tog 5>, <&none>, <&tog 5>; ignored-key-positions = <3 2 31 30 6 7 8 15 16 17 18 19 26 27 28 32 33>; ignored-layers = <5 1 2>; }; }; };
 # 135 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
-/ { behaviors { swapper: swapper { compatible = "zmk,behavior-tri-state"; #binding-cells = <0>; bindings = <&kt (((((0x07) << 16) | (0xE2))))>, <&kp ((((0x07) << 16) | (0x2B)))>, <&kt (((((0x07) << 16) | (0xE2))))>; ignored-key-positions = <2 7 16 17 18>; }; }; };
+/ { behaviors { swapper: swapper { compatible = "zmk,behavior-tri-state"; #binding-cells = <0>; bindings = <&kt (((((0x07) << 16) | (0xE3))))>, <&kp ((((0x07) << 16) | (0x2B)))>, <&kt (((((0x07) << 16) | (0xE3))))>; ignored-key-positions = <2 7 16 17 18>; }; }; };
 # 144 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
 / { behaviors { comma_morph: comma_morph { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x02 | 0x20)>; bindings = <&kp ((((0x07) << 16) | (0x36)))>, <&comma_inner_morph>; }; }; };
 / { behaviors { comma_inner_morph: comma_inner_morph { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x01 | 0x10)>; bindings = <&kp ((((0x07) << 16) | (0x33)))>, <&kp ((0x02 << 24 | (((0x07) << 16) | (0x36))))>; }; }; };

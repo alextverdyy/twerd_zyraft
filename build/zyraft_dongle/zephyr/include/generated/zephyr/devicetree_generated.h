@@ -21170,7 +21170,7 @@
 /* Generic property macros: */
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_0_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_toggle
-#define DT_N_S_behaviors_S_swapper_P_bindings_IDX_0_VAL_param1 458978
+#define DT_N_S_behaviors_S_swapper_P_bindings_IDX_0_VAL_param1 458979
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_0_VAL_param1_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_1_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
@@ -21178,7 +21178,7 @@
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_1_VAL_param1_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_2_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_2_PH DT_N_S_behaviors_S_key_toggle
-#define DT_N_S_behaviors_S_swapper_P_bindings_IDX_2_VAL_param1 458978
+#define DT_N_S_behaviors_S_swapper_P_bindings_IDX_2_VAL_param1 458979
 #define DT_N_S_behaviors_S_swapper_P_bindings_IDX_2_VAL_param1_EXISTS 1
 #define DT_N_S_behaviors_S_swapper_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_swapper, bindings, 0) \
 	fn(DT_N_S_behaviors_S_swapper, bindings, 1) \

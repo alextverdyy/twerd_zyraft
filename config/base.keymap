@@ -132,7 +132,7 @@ ZMK_TRI_STATE(
 
 /* Custom behaviors */
 // Alt+Tab swapper, requires tri-state module.
-ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
     ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
 
 // Define mod-morph with a *single* mod trigger for less repetition.

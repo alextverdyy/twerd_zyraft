@@ -1422,7 +1422,7 @@
 		swapper: swapper {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = < 0x0 >;
-			bindings = < &kt 0x700e2 >, < &kp 0x7002b >, < &kt 0x700e2 >;
+			bindings = < &kt 0x700e3 >, < &kp 0x7002b >, < &kt 0x700e3 >;
 			ignored-key-positions = < 0x2 0x7 0x10 0x11 0x12 >;
 			phandle = < 0x4c >;
 		};
