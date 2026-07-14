@@ -1,0 +1,4 @@
+name: zyraft-config
+build:
+  settings:
+    board_root: .

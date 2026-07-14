@@ -1,0 +1,89 @@
+cmake:
+  application:
+    configuration-dir: /home/tverdyy/Projects/uroblike-zyraft/zmk/app
+    source-dir: /home/tverdyy/Projects/uroblike-zyraft/zmk/app
+  board:
+    name: xiao_ble
+    path:
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/boards/seeed/xiao_ble
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble
+    qualifiers: nrf52840/zmk
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
+    extra-user-files:
+     - /home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap
+    files:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk.dts
+     - /home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/zyraft/zyraft_dongle.overlay
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/prospector_adapter.overlay
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/boards/xiao_ble_zmk.overlay
+     - /home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap
+    include-dirs:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-helpers/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/atmel/include
+     - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/gigadevice/include
+     - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/nuvoton/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/include
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/common
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/zyraft/include
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/include
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/include/zephyr
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/common
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/x86
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/xtensa
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/sparc
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/riscv
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/posix
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/nios2
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/arm64
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/arm
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/arc
+     - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts
+  kconfig:
+    files:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk_defconfig
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/prj.conf
+     - /home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/zyraft/zyraft_dongle.conf
+     - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/prospector_adapter.conf
+     - /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/zephyr/misc/generated/extra_kconfig_options.conf
+    user-files:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/prj.conf
+  toolchain:
+    name: zephyr
+    path: /home/tverdyy/.local/zephyr-sdk
+  vendor-specific:
+    nordic:
+      svdfile: /home/tverdyy/Projects/uroblike-zyraft/modules/hal/nordic/nrfx/mdk/nrf52840.svd
+  zephyr:
+    version: 4.1.0
+    zephyr-base: /home/tverdyy/Projects/uroblike-zyraft/zephyr
+version: 0.1.0
+west:
+  command: /home/tverdyy/Projects/uroblike-zyraft/.venv/bin/west build -s zmk/app -d build/zyraft_dongle -b xiao_ble//zmk -- -DSHIELD=zyraft_dongle prospector_adapter -DCONFIG_ZMK_STUDIO=y -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
+  topdir: /home/tverdyy/Projects/uroblike-zyraft
+  version: 1.5.0

@@ -1,0 +1,26 @@
+# WARNING. THIS FILE IS AUTO-GENERATED. DO NOT MODIFY!
+#
+# This file contains build system settings derived from your modules.
+#
+# Modules may be set via ZEPHYR_MODULES, ZEPHYR_EXTRA_MODULES,
+# and/or the west manifest file.
+#
+# See the Modules guide for more information.
+"BOARD_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/config"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-helpers"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-unicode"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/adi"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/atmel"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/espressif"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/gigadevice"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/nuvoton"
+"BOARD_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module"
+"MODULE_EXT_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk/app/keymap-module"
+"BOARD_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module"

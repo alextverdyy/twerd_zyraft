@@ -1,0 +1,3 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "/home/tverdyy/Projects/uroblike-zyraft/zephyr/boards/seeed/xiao_ble/Kconfig.sysbuild"
+osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/Kconfig.sysbuild"

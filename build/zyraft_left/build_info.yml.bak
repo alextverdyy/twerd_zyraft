@@ -1,0 +1,5 @@
+west:
+  command: /home/tverdyy/.venv/zmk/bin/west build -s zmk/app -d build/zyraft_left
+    -b nice_nano//zmk -- -DSHIELD=zyraft_left -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
+  topdir: /home/tverdyy/Projects/uroblike-zyraft
+  version: 1.5.0
