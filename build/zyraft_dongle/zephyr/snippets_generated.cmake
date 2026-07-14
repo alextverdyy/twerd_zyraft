@@ -18,3 +18,11 @@ set(SNIPPET_PATHS "/home/tverdyy/Projects/uroblike-zyraft/zephyr/snippets/bt-ll-
 # Create variable scope for snippets build variables
 zephyr_create_scope(snippets)
 
+###############################################################################
+# Snippet 'studio-rpc-usb-uart'
+
+# Common variable appends.
+zephyr_set(DTS_EXTRA_CPPFLAGS "-DZMK_BEHAVIORS_KEEP_ALL" SCOPE snippets APPEND)
+zephyr_set(EXTRA_DTC_OVERLAY_FILE "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay" SCOPE snippets APPEND)
+zephyr_set(EXTRA_CONF_FILE "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.conf" SCOPE snippets APPEND)
+

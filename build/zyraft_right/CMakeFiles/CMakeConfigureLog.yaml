@@ -140,7 +140,7 @@ events:
     found: null
     search_context:
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -285,6 +285,30 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/home/tverdyy/Projects/uroblike-zyraft/build/ZephyrBuildConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -410,6 +434,30 @@ events:
         reason: "no_exist"
       -
         path: "/home/tverdyy/Projects/uroblike-zyraft/zephyr/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/share/cps/zephyrbuild.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -580,10 +628,34 @@ events:
         path: "/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/share/cps/zephyrbuild.cps"
         mode: "cps"
         reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
     found: null
     search_context:
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -706,7 +778,7 @@ events:
     found: null
     search_context:
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -754,7 +826,7 @@ events:
     names:
       - "ccache"
     candidate_directories:
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -775,7 +847,7 @@ events:
       - "/usr/bin/core_perl/"
       - "/usr/lib/rustup/bin/"
     searched_directories:
-      - "/home/tverdyy/.venv/zmk/bin/ccache"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/ccache"
       - "/home/tverdyy/.npm-global/bin/ccache"
       - "/home/tverdyy/.pyenv/shims/ccache"
       - "/home/tverdyy/.local/bin/ccache"
@@ -798,7 +870,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -918,7 +990,7 @@ events:
       version: "0.16.5"
     search_context:
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -970,7 +1042,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -994,7 +1066,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/gperf"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/gperf"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/gperf"
-      - "/home/tverdyy/.venv/zmk/bin/gperf"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/gperf"
       - "/home/tverdyy/.npm-global/bin/gperf"
       - "/home/tverdyy/.pyenv/shims/gperf"
       - "/home/tverdyy/.local/bin/gperf"
@@ -1019,7 +1091,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1071,7 +1143,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -1096,7 +1168,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1148,7 +1220,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -1173,7 +1245,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1227,7 +1299,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
       - "/scripts/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -1256,8 +1328,8 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/imgtool"
       - "/scripts/imgtool.py"
       - "/scripts/imgtool"
-      - "/home/tverdyy/.venv/zmk/bin/imgtool.py"
-      - "/home/tverdyy/.venv/zmk/bin/imgtool"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/imgtool.py"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/imgtool"
       - "/home/tverdyy/.npm-global/bin/imgtool.py"
       - "/home/tverdyy/.npm-global/bin/imgtool"
       - "/home/tverdyy/.pyenv/shims/imgtool.py"
@@ -1301,7 +1373,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1353,7 +1425,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -1377,7 +1449,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/winpty"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/winpty"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/winpty"
-      - "/home/tverdyy/.venv/zmk/bin/winpty"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/winpty"
       - "/home/tverdyy/.npm-global/bin/winpty"
       - "/home/tverdyy/.pyenv/shims/winpty"
       - "/home/tverdyy/.local/bin/winpty"
@@ -1402,7 +1474,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1458,7 +1530,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1514,7 +1586,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1566,7 +1638,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -1591,7 +1663,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1647,7 +1719,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1703,7 +1775,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1759,7 +1831,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1815,7 +1887,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1871,7 +1943,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1927,7 +1999,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -1983,7 +2055,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2039,7 +2111,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2095,7 +2167,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2151,7 +2223,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2207,7 +2279,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2263,7 +2335,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2315,7 +2387,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -2339,7 +2411,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/uname"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/uname"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/uname"
-      - "/home/tverdyy/.venv/zmk/bin/uname"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/uname"
       - "/home/tverdyy/.npm-global/bin/uname"
       - "/home/tverdyy/.pyenv/shims/uname"
       - "/home/tverdyy/.local/bin/uname"
@@ -2354,7 +2426,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2420,7 +2492,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -2450,9 +2522,9 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ninja-build"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ninja"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/samu"
-      - "/home/tverdyy/.venv/zmk/bin/ninja-build"
-      - "/home/tverdyy/.venv/zmk/bin/ninja"
-      - "/home/tverdyy/.venv/zmk/bin/samu"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/ninja-build"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/ninja"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/samu"
       - "/home/tverdyy/.npm-global/bin/ninja-build"
       - "/home/tverdyy/.npm-global/bin/ninja"
       - "/home/tverdyy/.npm-global/bin/samu"
@@ -2486,7 +2558,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2546,7 +2618,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2630,7 +2702,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2708,7 +2780,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -2730,7 +2802,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-dlltool"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-dlltool"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-dlltool"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-dlltool"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-dlltool"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-dlltool"
@@ -2751,7 +2823,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-dlltool"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-dlltool"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/dlltool"
-      - "/home/tverdyy/.venv/zmk/bin/dlltool"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/dlltool"
       - "/home/tverdyy/.npm-global/bin/dlltool"
       - "/home/tverdyy/.pyenv/shims/dlltool"
       - "/home/tverdyy/.local/bin/dlltool"
@@ -2776,7 +2848,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2828,7 +2900,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -2853,7 +2925,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -2905,7 +2977,7 @@ events:
       - "tapi"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -2927,7 +2999,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-tapi"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-tapi"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-tapi"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-tapi"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-tapi"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-tapi"
@@ -2948,7 +3020,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-tapi"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-tapi"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/tapi"
-      - "/home/tverdyy/.venv/zmk/bin/tapi"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/tapi"
       - "/home/tverdyy/.npm-global/bin/tapi"
       - "/home/tverdyy/.pyenv/shims/tapi"
       - "/home/tverdyy/.local/bin/tapi"
@@ -2973,7 +3045,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3027,7 +3099,7 @@ events:
       - "arm-zephyr-eabi-gcc-ar"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3049,7 +3121,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-12.2"
@@ -3070,7 +3142,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ar-12.2"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-12"
@@ -3091,7 +3163,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ar-12"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar12"
@@ -3116,7 +3188,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3170,7 +3242,7 @@ events:
       - "arm-zephyr-eabi-gcc-ranlib"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3192,7 +3264,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
@@ -3213,7 +3285,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-12"
@@ -3234,7 +3306,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ranlib-12"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib12"
@@ -3259,7 +3331,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3319,7 +3391,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3403,7 +3475,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3483,7 +3555,7 @@ events:
       - "arm-zephyr-eabi-gcc-ar"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3505,7 +3577,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-12.2"
@@ -3526,7 +3598,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ar-12.2"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ar-12.2"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-12"
@@ -3547,7 +3619,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ar-12"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ar-12"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar12"
@@ -3572,7 +3644,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3626,7 +3698,7 @@ events:
       - "arm-zephyr-eabi-gcc-ranlib"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3648,7 +3720,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
@@ -3669,7 +3741,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-12"
@@ -3690,7 +3762,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ranlib-12"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ranlib-12"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib12"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib12"
@@ -3715,7 +3787,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3771,7 +3843,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3845,7 +3917,7 @@ events:
       - "arm-zephyr-eabi-gcc-ar"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3867,7 +3939,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-"
@@ -3888,7 +3960,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ar-"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ar-"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ar-"
@@ -3913,7 +3985,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -3970,7 +4042,7 @@ events:
       - "arm-zephyr-eabi-gcc-ranlib"
     candidate_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -3992,7 +4064,7 @@ events:
       - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
@@ -4013,7 +4085,7 @@ events:
       - "/usr/bin/core_perl/arm-zephyr-eabi-gcc-ranlib-"
       - "/usr/lib/rustup/bin/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/tverdyy/.venv/zmk/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.npm-global/bin/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.pyenv/shims/arm-zephyr-eabi-gcc-ranlib-"
       - "/home/tverdyy/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
@@ -4038,7 +4110,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -4088,7 +4160,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -4112,7 +4184,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/ccache"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/ccache"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ccache"
-      - "/home/tverdyy/.venv/zmk/bin/ccache"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/ccache"
       - "/home/tverdyy/.npm-global/bin/ccache"
       - "/home/tverdyy/.pyenv/shims/ccache"
       - "/home/tverdyy/.local/bin/ccache"
@@ -4137,7 +4209,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -4187,7 +4259,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -4211,7 +4283,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/puncover"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/puncover"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/puncover"
-      - "/home/tverdyy/.venv/zmk/bin/puncover"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/puncover"
       - "/home/tverdyy/.npm-global/bin/puncover"
       - "/home/tverdyy/.pyenv/shims/puncover"
       - "/home/tverdyy/.local/bin/puncover"
@@ -4236,7 +4308,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -4286,7 +4358,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
-      - "/home/tverdyy/.venv/zmk/bin/"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/"
       - "/home/tverdyy/.npm-global/bin/"
       - "/home/tverdyy/.pyenv/shims/"
       - "/home/tverdyy/.local/bin/"
@@ -4310,7 +4382,7 @@ events:
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/pahole"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/pahole"
       - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/pahole"
-      - "/home/tverdyy/.venv/zmk/bin/pahole"
+      - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/pahole"
       - "/home/tverdyy/.npm-global/bin/pahole"
       - "/home/tverdyy/.pyenv/shims/pahole"
       - "/home/tverdyy/.local/bin/pahole"
@@ -4325,7 +4397,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"
@@ -4422,27 +4494,27 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/ZephyrConfig.cmake"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/ZephyrConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/zephyr-config.cmake"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/zephyr-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/lib/cps/Zephyr.cps"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/cps/Zephyr.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/lib/cps/zephyr.cps"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/cps/zephyr.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/share/cps/Zephyr.cps"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/share/cps/Zephyr.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/tverdyy/.venv/zmk/share/cps/zephyr.cps"
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.venv/share/cps/zephyr.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4861,7 +4933,7 @@ events:
       CMAKE_PREFIX_PATH:
         - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
       ENV{PATH}:
-        - "/home/tverdyy/.venv/zmk/bin"
+        - "/home/tverdyy/Projects/uroblike-zyraft/.venv/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.npm-global/bin"
         - "/home/tverdyy/.pyenv/shims"

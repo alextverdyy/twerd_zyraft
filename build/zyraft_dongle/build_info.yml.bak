@@ -1,6 +1,6 @@
 west:
   command: /home/tverdyy/Projects/uroblike-zyraft/.venv/bin/west build -s zmk/app
-    -d build/zyraft_dongle -b xiao_ble//zmk -- -DSHIELD=zyraft_dongle prospector_adapter
-    -DCONFIG_ZMK_STUDIO=y -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
+    -d build/zyraft_dongle -b xiao_ble//zmk -S studio-rpc-usb-uart -- -DSHIELD=zyraft_dongle
+    prospector_adapter -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
   topdir: /home/tverdyy/Projects/uroblike-zyraft
   version: 1.5.0

@@ -22,12 +22,14 @@ cmake:
      - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
     extra-user-files:
      - /home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
     files:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk.dts
      - /home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/zyraft/zyraft_dongle.overlay
      - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/prospector_adapter.overlay
      - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/boards/xiao_ble_zmk.overlay
      - /home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
     include-dirs:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-helpers/include
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/include
@@ -65,12 +67,14 @@ cmake:
      - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/arc
      - /home/tverdyy/Projects/uroblike-zyraft/zephyr/dts
   kconfig:
+    extra-user-files:
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.conf
     files:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/xiao_ble_zmk_defconfig
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/prj.conf
      - /home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/zyraft/zyraft_dongle.conf
      - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/prospector_adapter.conf
-     - /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/zephyr/misc/generated/extra_kconfig_options.conf
+     - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.conf
     user-files:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/prj.conf
   toolchain:
@@ -84,6 +88,6 @@ cmake:
     zephyr-base: /home/tverdyy/Projects/uroblike-zyraft/zephyr
 version: 0.1.0
 west:
-  command: /home/tverdyy/Projects/uroblike-zyraft/.venv/bin/west build -s zmk/app -d build/zyraft_dongle -b xiao_ble//zmk -- -DSHIELD=zyraft_dongle prospector_adapter -DCONFIG_ZMK_STUDIO=y -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
+  command: /home/tverdyy/Projects/uroblike-zyraft/.venv/bin/west build -s zmk/app -d build/zyraft_dongle -b xiao_ble//zmk -S studio-rpc-usb-uart -- -DSHIELD=zyraft_dongle prospector_adapter -DZMK_CONFIG=/home/tverdyy/Projects/uroblike-zyraft/config
   topdir: /home/tverdyy/Projects/uroblike-zyraft
   version: 1.5.0

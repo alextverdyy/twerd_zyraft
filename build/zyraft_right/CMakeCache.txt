@@ -400,7 +400,7 @@ TOOLCHAIN_HAS_PICOLIBC:BOOL=ON
 TOOLCHAIN_ROOT:STRING=/home/tverdyy/Projects/uroblike-zyraft/zephyr
 
 //No help, variable specified on the command line.
-WEST_PYTHON:UNINITIALIZED=/home/tverdyy/.venv/zmk/bin/python3
+WEST_PYTHON:UNINITIALIZED=/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/python3
 
 //Zephyr base
 ZEPHYR_BASE:PATH=/home/tverdyy/Projects/uroblike-zyraft/zephyr
@@ -619,7 +619,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/home/tverdyy/.local/zephyr-sdk/sysro
 //Details about finding GnuLd
 FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd][v2.38()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/tverdyy/.venv/zmk/bin/python3][found components: Interpreter ][v3.14.6(3.10)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/python3][found components: Interpreter ][v3.14.6(3.10)]
 //Zephyr hardware model version
 HWM:INTERNAL=v2
 //Zephyr hardware model
@@ -631,17 +631,17 @@ SOC_DIRECTORIES:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zephyr/soc/nordi
 //SoC Linker script
 SOC_LINKER_SCRIPT:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld
 //West
-WEST:INTERNAL=/home/tverdyy/.venv/zmk/bin/python3;-m;west
+WEST:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/python3;-m;west
 //Cached environment variable ZEPHYR_SDK_INSTALL_DIR
 ZEPHYR_SDK_INSTALL_DIR:INTERNAL=/home/tverdyy/.local/zephyr-sdk
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
-_Python3_EXECUTABLE:INTERNAL=/home/tverdyy/.venv/zmk/bin/python3
+_Python3_EXECUTABLE:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/python3
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;6;64;<none>;cpython-314-x86_64-linux-gnu.so;abi3;/usr/lib/python3.14;/home/tverdyy/.venv/zmk/lib/python3.14;/home/tverdyy/.venv/zmk/lib/python3.14/site-packages;/home/tverdyy/.venv/zmk/lib/python3.14/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=e8768c8aba866bbf4aeb7d39af1b9159
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;6;64;<none>;cpython-314-x86_64-linux-gnu.so;abi3;/usr/lib/python3.14;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14/site-packages;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=7675db3c01c27a8c4e23d02545114e17
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

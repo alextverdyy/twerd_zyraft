@@ -1144,7 +1144,6 @@
 			flavor = "balanced";
 			tapping-term-ms = < 0xc8 >;
 			quick-tap-ms = < 0xaf >;
-			phandle = < 0x3b >;
 		};
 		num_dance: num_dance {
 			compatible = "zmk,behavior-tap-dance";
@@ -1201,6 +1200,7 @@
 			#binding-cells = < 0x0 >;
 			mods = < 0x22 >;
 			bindings = < &kp 0x2070038 >, < &kp 0x207001e >;
+			phandle = < 0x3b >;
 		};
 		lpar_lt: lpar_lt {
 			compatible = "zmk,behavior-mod-morph";
@@ -1259,7 +1259,7 @@
 			bindings = < &sk 0x700e1 &leader >;
 			phandle = < 0x12 >;
 		};
-		esc_magic_tap: esc_magic_tap {
+		esc_magic_hold: esc_magic_hold {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = < 0x0 >;
 			bindings = < &magic_shift 0x700e1 0x0 >;
@@ -1270,7 +1270,7 @@
 		esc_magic: esc_magic {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = < 0x2 >;
-			bindings = < &kp >, < &esc_magic_tap >;
+			bindings = < &esc_magic_hold >, < &kp >;
 			flavor = "balanced";
 			tapping-term-ms = < 0xc8 >;
 			quick-tap-ms = < 0xaf >;
@@ -1348,6 +1348,13 @@
 			timeout-ms = < 0x12 >;
 			bindings = < &hm_combo_ldrsh 0x30700e2 0x0 >;
 			key-positions = < 0xb 0xc 0xd >;
+			layers = < 0x0 0x1 0x3 >;
+			require-prior-idle-ms = < 0x96 >;
+		};
+		combo_tmux {
+			timeout-ms = < 0x12 >;
+			bindings = < &kp 0x1070016 >;
+			key-positions = < 0x14 0x15 >;
 			layers = < 0x0 0x1 0x3 >;
 			require-prior-idle-ms = < 0x96 >;
 		};
@@ -1594,7 +1601,7 @@
 		compatible = "zmk,keymap";
 		layer_Base {
 			display-name = "Base";
-			bindings = < &kp 0x70014 &kp 0x7001a &kp 0x70008 &kp 0x70015 &kp 0x70017 &kp 0x7001c &kp 0x70018 &kp 0x7000c &kp 0x70012 &kp 0x70013 &hml 0x700e0 0x70004 &hml 0x700e2 0x70016 &hml 0x700e3 0x70007 &hml 0x700e1 0x70009 &kp 0x7000a &kp 0x7000b &hmr 0x700e5 0x7000d &hmr 0x700e3 0x7000e &hmr 0x700e6 0x7000f &hmr 0x700e4 0x70033 &kp 0x7001d &kp 0x7001b &kp 0x70006 &kp 0x70019 &kp 0x70005 &kp 0x70011 &kp 0x70010 &comma_morph &dot_morph &smart_num 0x3 0x0 &esc_magic 0x70029 0x0 &lt_spc 0x1 0x0 &lt 0x2 0x70028 &lt 0x3 0x7002a >;
+			bindings = < &kp 0x70014 &kp 0x7001a &kp 0x70008 &kp 0x70015 &kp 0x70017 &kp 0x7001c &kp 0x70018 &kp 0x7000c &kp 0x70012 &kp 0x70013 &hml 0x700e0 0x70004 &hml 0x700e2 0x70016 &hml 0x700e3 0x70007 &hml 0x700e1 0x70009 &kp 0x7000a &kp 0x7000b &hmr 0x700e5 0x7000d &hmr 0x700e3 0x7000e &hmr 0x700e6 0x7000f &hmr 0x700e4 0x70033 &kp 0x7001d &kp 0x7001b &kp 0x70006 &kp 0x70019 &kp 0x70005 &kp 0x70011 &kp 0x70010 &comma_morph &dot_morph &qexcl &esc_magic 0x0 0x70029 &lt_spc 0x1 0x0 &lt 0x2 0x70028 &lt 0x3 0x7002a >;
 		};
 		layer_Nav {
 			display-name = "Nav";

@@ -112,4 +112,5 @@ empty_file.o: \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/input/processors/code_mapper.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/input/processors/transform.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/input/processors/temp_layer.dtsi \
- /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/input/processors/behaviors.dtsi
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/input/processors/behaviors.dtsi \
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay

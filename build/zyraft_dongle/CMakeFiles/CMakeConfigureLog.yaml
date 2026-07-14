@@ -437,6 +437,30 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/firmware/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/ZephyrBuildConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -602,6 +626,30 @@ events:
         reason: "no_exist"
       -
         path: "/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/tverdyy/Projects/uroblike-zyraft/.git/share/cps/zephyrbuild.cps"
         mode: "cps"
         reason: "no_exist"
     found: null
