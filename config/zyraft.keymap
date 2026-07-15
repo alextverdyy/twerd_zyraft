@@ -21,7 +21,13 @@ ZMK_MACRO(esc_magic_hold, bindings = <&magic_shift LSHFT 0>; wait-ms = <0>;
 ZMK_HOLD_TAP(esc_magic, bindings = <&esc_magic_hold>, <&kp>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
-#define LH1_BINDING &esc_magic 0 ESC
+
+// New hold‑tap: ESC tap, SYM layer hold
+ZMK_HOLD_TAP(esc_sym, bindings = <&mo SYM>, <&kp>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+// New hold‑tap: J tap, Tab hold
+ZMK_HOLD_TAP(j_tab, bindings = <&kp TAB>, <&kp>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+#define LH1_BINDING &esc_sym 0 ESC
 
 // Tap: sticky sym-layer | Hold: sym-layer.
 ZMK_HOLD_TAP(magic_sym, bindings = <&mo>, <&sl>; flavor = "balanced";
@@ -63,11 +69,11 @@ ZMK_BASE_LAYER(Base,
 //             ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                 &kp Q         &kp W         &kp E         &kp R         &kp T           , &kp Y         &kp U         &kp I         &kp O         &kp P         ,
 //             ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                &hml LCTRL A  &hml LALT S   &hml LGUI D   &hml LSHFT F  &kp G           , &kp H         &hmr RSHFT J  &hmr LGUI K   &hmr RALT L   &hmr RCTRL SEMI,
+                &hml LCTRL A  &hml LALT S   &hml LGUI D   &lt NAV F     &kp G           , &kp H         &j_tab        &hmr LGUI K   &hmr RALT L   &hmr RCTRL SEMI,
 //             ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                 &kp Z         &kp X         &kp C         &kp V         &kp B           , &kp N         &kp M         &comma_morph  &dot_morph    &qexcl         ,
 //             ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴───────────╯
-                                                        LH1_BINDING   &lt_spc NAV 0   , &lt FN RET    &lt NUM BSPC
+                                                        LH1_BINDING   &mt LSHFT SPACE   , &lt FN RET    &lt NUM BSPC
 //                                                      ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -167,7 +173,7 @@ ZMK_BASE_LAYER(Sys,
 //             ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                 &studio_unlock ___           ___           ___           &sys_reset      , &sys_reset    ___           ___           ___           ___           ,
 //             ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴───────────╯
-                                                      ___           ___             , ___           ___
+                                                      &ok_toggle, ___, ___, ___, ___
 //                                                      ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
