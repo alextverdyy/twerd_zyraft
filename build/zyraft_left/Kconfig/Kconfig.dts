@@ -11707,6 +11707,21 @@ DT_COMPAT_ZMK_BEHAVIOR_NONE := zmk,behavior-none
 config DT_HAS_ZMK_BEHAVIOR_NONE_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_NONE))
 
+DT_COMPAT_ZMK_BEHAVIOR_OS_KEY := zmk,behavior-os-key
+
+config DT_HAS_ZMK_BEHAVIOR_OS_KEY_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_OS_KEY))
+
+DT_COMPAT_ZMK_BEHAVIOR_OS_LAYER_MOD := zmk,behavior-os-layer-mod
+
+config DT_HAS_ZMK_BEHAVIOR_OS_LAYER_MOD_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_OS_LAYER_MOD))
+
+DT_COMPAT_ZMK_BEHAVIOR_OS_SELECTOR := zmk,behavior-os-selector
+
+config DT_HAS_ZMK_BEHAVIOR_OS_SELECTOR_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_OS_SELECTOR))
+
 DT_COMPAT_ZMK_BEHAVIOR_OUTPUTS := zmk,behavior-outputs
 
 config DT_HAS_ZMK_BEHAVIOR_OUTPUTS_ENABLED

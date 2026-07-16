@@ -16,6 +16,7 @@ cmake:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings
+     - /home/tverdyy/Projects/uroblike-zyraft/oskey/dts/bindings
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings
      - /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings
      - /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings
@@ -37,6 +38,8 @@ cmake:
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/include
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts
      - /home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts
+     - /home/tverdyy/Projects/uroblike-zyraft/oskey/include
+     - /home/tverdyy/Projects/uroblike-zyraft/oskey/dts
      - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32/dts
      - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/atmel/include
      - /home/tverdyy/Projects/uroblike-zyraft/modules/hal/gigadevice/include

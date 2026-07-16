@@ -1,0 +1,5 @@
+osource "/home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/*/Kconfig.defconfig"
+osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/boards/shields/*/Kconfig.defconfig"
+osource "/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/*/Kconfig.defconfig"
+osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/shields/*/Kconfig.defconfig"
+osource "/home/tverdyy/Projects/uroblike-zyraft/config/boards/shields/*/Kconfig.defconfig"

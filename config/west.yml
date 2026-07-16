@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: mentaldesk
+      url-base: https://github.com/mentaldesk
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,6 +32,9 @@ manifest:
       revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
+      revision: main
+    - name: oskey
+      remote: mentaldesk
       revision: main
     - name: prospector-zmk-module
       remote: carrefinho

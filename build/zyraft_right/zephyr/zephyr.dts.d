@@ -40,6 +40,12 @@ empty_file.o: \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/physical_layouts.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap \
  /home/tverdyy/Projects/uroblike-zyraft/zmk-helpers/include/zmk-helpers/key-labels/34.h \
+ /home/tverdyy/Projects/uroblike-zyraft/oskey/include/dt-bindings/zmk/oskey.h \
+ /home/tverdyy/Projects/uroblike-zyraft/oskey/dts/behaviors/oskey.dtsi \
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/keys.h \
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/hid_usage.h \
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/hid_usage_pages.h \
+ /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/modifiers.h \
  /home/tverdyy/Projects/uroblike-zyraft/config/base.keymap \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/key_press.dtsi \
@@ -50,10 +56,6 @@ empty_file.o: \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/mod_tap.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/layer_tap.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/gresc.dtsi \
- /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/keys.h \
- /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/hid_usage.h \
- /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/hid_usage_pages.h \
- /home/tverdyy/Projects/uroblike-zyraft/zmk/app/include/dt-bindings/zmk/modifiers.h \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/sticky_key.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/momentary_layer.dtsi \
  /home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/behaviors/toggle_layer.dtsi \

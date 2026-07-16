@@ -130,8 +130,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+//Path to a program.
+CMAKE_C_COMPILER:FILEPATH=/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -452,7 +452,7 @@ zmk_SOURCE_DIR:STATIC=/home/tverdyy/Projects/uroblike-zyraft/zmk/app
 //List of board directories for board (nice_nano)
 BOARD_DIRECTORIES:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/boards/nicekeyboards/nice_nano;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/nicekeyboards/nice_nano
 //DT bindings root directories
-CACHED_DTS_ROOT_BINDINGS:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
+CACHED_DTS_ROOT_BINDINGS:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/oskey/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -504,8 +504,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
@@ -568,7 +566,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=212
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=213
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -642,6 +640,8 @@ _Python3_EXECUTABLE:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/.venv/bin/py
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;6;64;<none>;cpython-314-x86_64-linux-gnu.so;abi3;/usr/lib/python3.14;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14/site-packages;/home/tverdyy/Projects/uroblike-zyraft/.venv/lib/python3.14/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=7675db3c01c27a8c4e23d02545114e17
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

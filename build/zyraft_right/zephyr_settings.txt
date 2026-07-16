@@ -13,6 +13,7 @@
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key"
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key"
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state"
+"DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/oskey"
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32"
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/adi"
 "DTS_ROOT":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/atmel"

@@ -34,6 +34,12 @@ config ZEPHYR_ZMK_TRI_STATE_MODULE
 	bool
 	default y
 endmenu
+menu "zmk-behavior-oskey (/home/tverdyy/Projects/uroblike-zyraft/oskey)"
+osource "/home/tverdyy/Projects/uroblike-zyraft/oskey/Kconfig"
+config ZEPHYR_ZMK_BEHAVIOR_OSKEY_MODULE
+	bool
+	default y
+endmenu
 config ZEPHYR_HAL_STM32_MODULE
 	bool
 	default y
