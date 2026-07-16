@@ -88,6 +88,7 @@
 /home/tverdyy/Projects/uroblike-zyraft/modules/lib/gui/lvgl/zephyr/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/modules/lib/picolibc/zephyr/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/modules/lib/zscilib/Kconfig.zscilib
+/home/tverdyy/Projects/uroblike-zyraft/oskey/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/Kconfig.defconfig
 /home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/boards/shields/prospector_adapter/Kconfig.shield

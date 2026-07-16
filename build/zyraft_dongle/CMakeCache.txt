@@ -485,7 +485,7 @@ zmk_SOURCE_DIR:STATIC=/home/tverdyy/Projects/uroblike-zyraft/zmk/app
 //List of board directories for board (xiao_ble)
 BOARD_DIRECTORIES:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zephyr/boards/seeed/xiao_ble;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble
 //DT bindings root directories
-CACHED_DTS_ROOT_BINDINGS:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
+CACHED_DTS_ROOT_BINDINGS:INTERNAL=/home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/oskey/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/prospector-zmk-module/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zmk/app/dts/bindings;/home/tverdyy/Projects/uroblike-zyraft/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -599,7 +599,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=227
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=228
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

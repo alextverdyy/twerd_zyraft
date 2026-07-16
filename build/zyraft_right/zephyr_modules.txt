@@ -5,6 +5,7 @@
 "zmk-adaptive-key":"/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key":"/home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key"
 "zmk-leader-key":"/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key":"/home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key"
 "zmk-tri-state":"/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state":"/home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state"
+"zmk-behavior-oskey":"/home/tverdyy/Projects/uroblike-zyraft/oskey":"/home/tverdyy/Projects/uroblike-zyraft/oskey"
 "hal_stm32":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32":"/home/tverdyy/Projects/uroblike-zyraft/modules/hal/stm32"
 "lvgl":"/home/tverdyy/Projects/uroblike-zyraft/modules/lib/gui/lvgl":"${ZEPHYR_LVGL_CMAKE_DIR}"
 "zmk-studio-messages":"/home/tverdyy/Projects/uroblike-zyraft/modules/msgs/zmk-studio-messages":""

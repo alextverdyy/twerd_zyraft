@@ -331,6 +331,8 @@
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/zmk-leader-key/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/zmk-tri-state/CMakeFiles/edit_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/zmk-tri-state/CMakeFiles/rebuild_cache.dir
+/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/zmk-behavior-oskey/CMakeFiles/edit_cache.dir
+/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/zmk-behavior-oskey/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/hal_stm32/CMakeFiles/edit_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/hal_stm32/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_right/modules/lvgl/CMakeFiles/edit_cache.dir

@@ -144,6 +144,7 @@
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-adaptive-key/cmake_install.cmake",
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-leader-key/cmake_install.cmake",
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-tri-state/cmake_install.cmake",
+		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-behavior-oskey/cmake_install.cmake",
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/hal_stm32/cmake_install.cmake",
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/lvgl/cmake_install.cmake",
 		"/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/canopennode/cmake_install.cmake",
