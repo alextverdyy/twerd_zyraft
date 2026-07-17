@@ -6448,3 +6448,55 @@ events:
         - "/usr/lib/rustup/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/cmake/compiler/gcc/target.cmake:9 (find_program)"
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/cmake/modules/zephyr_default.cmake:143 (include)"
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/tverdyy/Projects/uroblike-zyraft/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/home/tverdyy/.local/zephyr-sdk/"
+    found: "/home/tverdyy/.local/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/tverdyy/.local/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/home/tverdyy/.local/bin"
+        - "/home/tverdyy/.local/share/pnpm"
+        - "/home/tverdyy/.npm-global/bin"
+        - "/home/tverdyy/.npm-global/bin"
+        - "/home/tverdyy/.pyenv/shims"
+        - "/home/tverdyy/.nix-profile/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/home/tverdyy/.opencode/bin"
+        - "/home/tverdyy/.local/bin"
+        - "/home/tverdyy/.pyenv/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
