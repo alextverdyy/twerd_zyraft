@@ -1,0 +1,28 @@
+# Hermes-local plans
+/.hermes/
+
+# Python tooling
+/.venv/
+__pycache__/
+*.py[cod]
+
+# West workspace and generated build output
+/.west/
+/build/
+/modules/
+/optional/
+/zephyr/
+/zmk/
+/zmk-helpers/
+/zmk-unicode/
+/zmk-auto-layer/
+/zmk-adaptive-key/
+/zmk-leader-key/
+/zmk-smart-toggle/
+/zmk-tri-state/
+/oskey/
+/prospector-zmk-module/
+
+# Editor and OS files
+.DS_Store
+*.swp

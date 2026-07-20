@@ -1,3 +1,0 @@
-# Load board Kconfig descriptions.
-osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/boards/nicekeyboards/nice_nano/Kconfig.nice_nano"
-osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/nicekeyboards/nice_nano/Kconfig.nice_nano"
