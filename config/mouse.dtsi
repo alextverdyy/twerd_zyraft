@@ -23,10 +23,6 @@
         layers = <NAV>;
         input-processors = <&zip_xy_scaler 3 1>;
     };
-    precision {
-        layers = <FN>;
-        input-processors = <&zip_xy_scaler 1 2>;
-    };
 };
 
 / {
@@ -43,10 +39,6 @@
     warp {
         layers = <NAV>;
         input-processors = <&zip_scroll_scaler 2 1>;
-    };
-    precision {
-        layers = <FN>;
-        input-processors = <&zip_scroll_scaler 1 2>;
     };
 };
 

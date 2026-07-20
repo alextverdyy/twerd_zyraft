@@ -15,7 +15,6 @@
 
 #define DEF 0
 #define NAV 1
-#define FN 2
 #define NUM 3
 #define SYS 4
 #define MOUSE 5
@@ -89,26 +88,33 @@ ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
 MASK_MODS(masked_end, (MOD_LCTL), &kp END)
 
-/* Magic-shift & auto-layers */
-// Tap: repeat after alpha, else sticky-shift |
-// Shift + tap/ double-tap: caps-word | Hold: shift.
-#define MAGIC_SHIFT &magic_shift LSHFT 0
-ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
+/* smart_shift: chord operator for Tab/Esc.
+//   Tap  = sticky shift (consumed by next keypress).
+//   Hold = held shift (regular shift).
+//   Replaces the previous multi-mode magic_shift. Alpha-repeat and
+//   caps-word features are dropped to keep the gesture simple.
+ZMK_HOLD_TAP(smart_shift, bindings = <&kp LSHFT>, <&sk LSHFT>;
     flavor = "balanced"; tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;)
+    quick-tap-ms = <QUICK_TAP_MS>;
+    hold-trigger-key-positions = <THUMBS>;)
 
-ZMK_MOD_MORPH(magic_shift_tap, bindings = <&shift_repeat>, <&caps_word>;
-    mods = <(MOD_LSFT)>;)
+/* rh0_smart: mod-morph on RH0.
+   Tap = RET.  With shift held (LH1 sticky or otherwise) = TAB.
+   Used for the smart-shift chord pattern. */
+ZMK_MOD_MORPH(rh0_smart, mods = <(MOD_LSFT|MOD_RSFT)>;
+              bindings = <&kp RET>, <&kp TAB>;)
 
-ZMK_ADAPTIVE_KEY(
-    shift_repeat, bindings = <&sk LSHFT>;
-    repeat {
-        trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
-        bindings = <&key_repeat>;
-        max-prior-idle-ms = <1200>;
-        strict-modifiers;
-    };
-)
+/* rh1_smart: mod-morph on RH1.
+   Tap = BSPC.  With shift held = ESC. */
+ZMK_MOD_MORPH(rh1_smart, mods = <(MOD_LSFT|MOD_RSFT)>;
+              bindings = <&kp BSPC>, <&kp ESC>;)
+
+/* tmux_prefix: smart-toggle for tmux.
+   Tap = Ctrl+S (held as modifier). Next keypress = tmux command.
+   Auto-release after one key.  Requires zmk-smart-toggle module. */
+ZMK_BEHAVIOR(tmux_prefix, compatible = "zmk,behavior-smart-toggle";
+              #binding-cells = <0>;
+              bindings = <&kp LC(S)>, <&kp LC(S)>;)
 
 &caps_word { // Mods deactivate caps-word, requires PR #1451.
     /delete-property/ ignore-modifiers;
@@ -127,7 +133,7 @@ ZMK_TRI_STATE(
     smart_mouse, bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
     ignored-key-positions =
         <LT1 LT2 LH0 LH1 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1>;
-    ignored-layers = <MOUSE NAV FN>;
+    ignored-layers = <MOUSE NAV>;
 )
 
 /* Custom behaviors */
@@ -180,7 +186,7 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 #define VOL_DOWN &hmr RSHFT C_VOL_DN
 
 /* Keymap */
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
+// SYS layer access: 3-thumb combo (LH1+LH0+RH0) — see combos.dtsi.
 
 #ifndef ZMK_BASE_LAYER
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH) \
