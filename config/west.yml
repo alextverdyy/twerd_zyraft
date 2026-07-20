@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/dhruvinsh
     - name: mentaldesk
       url-base: https://github.com/mentaldesk
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -39,5 +41,8 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
+    - name: zmk-smart-toggle
+      remote: caksoylar
+      revision: main
   self:
     path: config

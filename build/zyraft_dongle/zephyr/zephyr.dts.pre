@@ -2856,7 +2856,7 @@ disp_spi: &spi3 {
 # 1 "/home/tverdyy/Projects/uroblike-zyraft/config/combos.dtsi" 1
 # 15 "/home/tverdyy/Projects/uroblike-zyraft/config/combos.dtsi"
 / { combos { compatible = "zmk,combos"; combo_esc { timeout-ms = <18>; bindings = <&kp (((((0x07) << 16) | (0x29))))>; key-positions = <1 2>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
-/ { combos { compatible = "zmk,combos"; combo_esc_thumb { timeout-ms = <18>; bindings = <&kp (((((0x07) << 16) | (0x29))))>; key-positions = <31 32>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
+/ { combos { compatible = "zmk,combos"; combo_num_sticky { timeout-ms = <18>; bindings = <&num_dance>; key-positions = <31 32>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
 / { combos { compatible = "zmk,combos"; combo_mouse { timeout-ms = <18>; bindings = <&smart_mouse>; key-positions = <2 3>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
 / { combos { compatible = "zmk,combos"; combo_tab { timeout-ms = <18>; bindings = <&hml (0x02 << 24 | (((((0x07) << 16) | (0xE2))))) ((((0x07) << 16) | (0x2B)))>; key-positions = <11 12>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
 / { behaviors { hm_combo_ldr: hm_combo_ldr { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; bindings = <&kp>, <&leader>; flavor = "balanced"; tapping-term-ms = <280>; quick-tap-ms = <175>; require-prior-idle-ms = <150>; hold-trigger-on-release; hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>; }; }; }; / { combos { compatible = "zmk,combos"; combo_ldr { timeout-ms = <18>; bindings = <&hm_combo_ldr (0x02 << 24 | (((((0x07) << 16) | (0xE0))))) 0>; key-positions = <12 13>; layers = <0 1 3>; require-prior-idle-ms = <150>; }; }; };
@@ -2898,6 +2898,9 @@ disp_spi: &spi3 {
 / { combos { compatible = "zmk,combos"; combo_fslh { timeout-ms = <30>; bindings = <&kp (((((0x07) << 16) | (0x38))))>; key-positions = <17 27>; layers = <0 1 3>; require-prior-idle-ms = <50>; }; }; };
 / { combos { compatible = "zmk,combos"; combo_pipe { timeout-ms = <30>; bindings = <&kp ((0x02 << 24 | (((0x07) << 16) | (0x31))))>; key-positions = <18 28>; layers = <0 1 3>; require-prior-idle-ms = <50>; }; }; };
 / { combos { compatible = "zmk,combos"; combo_numwd { timeout-ms = <18>; bindings = <&num_word 3>; key-positions = <28 29>; layers = <0>; require-prior-idle-ms = <150>; }; }; };
+
+
+/ { combos { compatible = "zmk,combos"; combo_sys_layer { timeout-ms = <18>; bindings = <&mo 4>; key-positions = <30 31 32>; layers = <0>; require-prior-idle-ms = <150>; }; }; };
 # 62 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap" 2
 # 1 "/home/tverdyy/Projects/uroblike-zyraft/config/leader.dtsi" 1
 # 18 "/home/tverdyy/Projects/uroblike-zyraft/config/leader.dtsi"
@@ -3120,15 +3123,41 @@ disp_spi: &spi3 {
 
 
 
-/ { behaviors { magic_shift: magic_shift { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; bindings = <&kp>, <&magic_shift_tap>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <175>; }; }; };
+/ { behaviors { magic_shift: magic_shift { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; bindings = <&kp>, <&magic_shift_tap>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <175>; hold-trigger-key-positions = <30 31 32 33>; }; }; };
 
 
+
+
+
+
+
+/ { behaviors { rh0_smart: rh0_smart { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x02|0x20)>; bindings = <&kp (((((0x07) << 16) | (0x28))))>, <&kp (((((0x07) << 16) | (0x28))))>; }; }; };
+
+
+
+
+/ { behaviors { bs_esc: bs_esc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x02|0x20)>; bindings = <&kp (((((0x07) << 16) | (0x2A))))>, <&kp (((((0x07) << 16) | (0x29))))>; }; }; };
+
+
+/ { behaviors { rh1_smart: rh1_smart { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; bindings = <&mo>, <&bs_esc>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <175>; }; }; };
+# 122 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
+# 1 "/home/tverdyy/Projects/uroblike-zyraft/config/smart-toggle.dtsi" 1
+/ {
+    behaviors {
+        tmux_prefix: tmux_prefix {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp (0x01 << 24 | ((((0x07) << 16) | (0x16))))>, <&kp (0x01 << 24 | ((((0x07) << 16) | (0x16))))>;
+        };
+    };
+};
+# 123 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap" 2
 
 / { behaviors { magic_shift_tap: magic_shift_tap { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&shift_repeat>, <&caps_word>; mods = <(0x02)>; }; }; };
 
 
 / { behaviors { shift_repeat: shift_repeat { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&sk (((((0x07) << 16) | (0xE1))))>; repeat { trigger-keys = <((((0x07) << 16) | (0x04))) ((((0x07) << 16) | (0x05))) ((((0x07) << 16) | (0x06))) ((((0x07) << 16) | (0x07))) ((((0x07) << 16) | (0x08))) ((((0x07) << 16) | (0x09))) ((((0x07) << 16) | (0x0A))) ((((0x07) << 16) | (0x0B))) ((((0x07) << 16) | (0x0C))) ((((0x07) << 16) | (0x0D))) ((((0x07) << 16) | (0x0E))) ((((0x07) << 16) | (0x0F))) ((((0x07) << 16) | (0x10))) ((((0x07) << 16) | (0x11))) ((((0x07) << 16) | (0x12))) ((((0x07) << 16) | (0x13))) ((((0x07) << 16) | (0x14))) ((((0x07) << 16) | (0x15))) ((((0x07) << 16) | (0x16))) ((((0x07) << 16) | (0x17))) ((((0x07) << 16) | (0x18))) ((((0x07) << 16) | (0x19))) ((((0x07) << 16) | (0x1A))) ((((0x07) << 16) | (0x1B))) ((((0x07) << 16) | (0x1C))) ((((0x07) << 16) | (0x1D)))>; bindings = <&key_repeat>; max-prior-idle-ms = <1200>; strict-modifiers; }; }; }; };
-# 113 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
+# 137 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
 &caps_word {
     /delete-property/ ignore-modifiers;
 };
@@ -3142,8 +3171,8 @@ disp_spi: &spi3 {
 
 
 
-/ { behaviors { smart_mouse: smart_mouse { compatible = "zmk,behavior-tri-state"; #binding-cells = <0>; bindings = <&tog 5>, <&none>, <&tog 5>; ignored-key-positions = <3 2 31 30 6 7 8 15 16 17 18 19 26 27 28 32 33>; ignored-layers = <5 1 2>; }; }; };
-# 141 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
+/ { behaviors { smart_mouse: smart_mouse { compatible = "zmk,behavior-tri-state"; #binding-cells = <0>; bindings = <&tog 5>, <&none>, <&tog 5>; ignored-key-positions = <3 2>; ignored-layers = <5 1 2>; }; }; };
+# 165 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
 / { behaviors { comma_morph: comma_morph { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x02 | 0x20)>; bindings = <&kp ((((0x07) << 16) | (0x36)))>, <&comma_inner_morph>; }; }; };
 / { behaviors { comma_inner_morph: comma_inner_morph { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(0x01 | 0x10)>; bindings = <&kp ((((0x07) << 16) | (0x33)))>, <&kp ((0x02 << 24 | (((0x07) << 16) | (0x36))))>; }; }; };
 
@@ -3166,6 +3195,14 @@ disp_spi: &spi3 {
 
 
 
+
+/ { behaviors { lt_ret: lt_ret { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; bindings = <&mo>, <&rt_dance>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <175>; }; }; };
+
+
+/ { behaviors { rt_dance: rt_dance { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; bindings = <&kp (((((0x07) << 16) | (0x28))))>, <&kp ((((0x07) << 16) | (0x2B)))>; tapping-term-ms = <200>; }; }; };
+
+
+
 / { behaviors { bs_del: bs_del { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp (((((0x07) << 16) | (0x2A))))>, <&kp (((((0x07) << 16) | (0x4C))))>; mods = <(0x02|0x20)>; keep-mods = <0x20>; }; }; };
 
 
@@ -3175,8 +3212,6 @@ disp_spi: &spi3 {
 
 
 / { behaviors { leader_sft: leader_sft { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&sk (((((0x07) << 16) | (0xE1)))) &leader>; }; }; };
-# 183 "/home/tverdyy/Projects/uroblike-zyraft/config/base.keymap"
-/ { conditional_layers { compatible = "zmk,conditional-layers"; tri_layer_sys { if-layers = <2 3>; then-layer = <4>; }; }; };
 # 18 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap" 2
 
 
@@ -3214,17 +3249,17 @@ disp_spi: &spi3 {
     };
 };
 # 62 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
-/ { keymap { compatible = "zmk,keymap"; layer_Base { display-name = "Base"; bindings = <&kp ((((0x07) << 16) | (0x14))) &kp ((((0x07) << 16) | (0x1A))) &kp ((((0x07) << 16) | (0x08))) &kp ((((0x07) << 16) | (0x15))) &kp ((((0x07) << 16) | (0x17))) &kp ((((0x07) << 16) | (0x1C))) &kp ((((0x07) << 16) | (0x18))) &kp ((((0x07) << 16) | (0x0C))) &kp ((((0x07) << 16) | (0x12))) &kp ((((0x07) << 16) | (0x13))) &hml (((((0x07) << 16) | (0xE0)))) ((((0x07) << 16) | (0x04))) &hml (((((0x07) << 16) | (0xE2)))) ((((0x07) << 16) | (0x16))) &hml (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x07))) &hml (((((0x07) << 16) | (0xE1)))) ((((0x07) << 16) | (0x09))) &kp ((((0x07) << 16) | (0x0A))) &kp ((((0x07) << 16) | (0x0B))) &hmr (((((0x07) << 16) | (0xE5)))) ((((0x07) << 16) | (0x0D))) &hmr (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x0E))) &hmr (((((0x07) << 16) | (0xE6)))) ((((0x07) << 16) | (0x0F))) &hmr (((((0x07) << 16) | (0xE4)))) (((((0x07) << 16) | (0x33)))) &kp ((((0x07) << 16) | (0x1D))) &kp ((((0x07) << 16) | (0x1B))) &kp ((((0x07) << 16) | (0x06))) &kp ((((0x07) << 16) | (0x19))) &kp ((((0x07) << 16) | (0x05))) &kp ((((0x07) << 16) | (0x11))) &kp ((((0x07) << 16) | (0x10))) &comma_morph &dot_morph &qexcl &magic_shift (((((0x07) << 16) | (0xE1)))) 0 &lt_spc 1 0 &lt 2 (((((0x07) << 16) | (0x28)))) &lt 3 (((((0x07) << 16) | (0x2A))))>; }; }; };
+/ { keymap { compatible = "zmk,keymap"; layer_Base { display-name = "Base"; bindings = <&kp ((((0x07) << 16) | (0x14))) &kp ((((0x07) << 16) | (0x1A))) &kp ((((0x07) << 16) | (0x08))) &kp ((((0x07) << 16) | (0x15))) &kp ((((0x07) << 16) | (0x17))) &kp ((((0x07) << 16) | (0x1C))) &kp ((((0x07) << 16) | (0x18))) &kp ((((0x07) << 16) | (0x0C))) &kp ((((0x07) << 16) | (0x12))) &kp ((((0x07) << 16) | (0x13))) &hml (((((0x07) << 16) | (0xE0)))) ((((0x07) << 16) | (0x04))) &hml (((((0x07) << 16) | (0xE2)))) ((((0x07) << 16) | (0x16))) &hml (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x07))) &hml (((((0x07) << 16) | (0xE1)))) ((((0x07) << 16) | (0x09))) &kp ((((0x07) << 16) | (0x0A))) &kp ((((0x07) << 16) | (0x0B))) &hmr (((((0x07) << 16) | (0xE5)))) ((((0x07) << 16) | (0x0D))) &hmr (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x0E))) &hmr (((((0x07) << 16) | (0xE6)))) ((((0x07) << 16) | (0x0F))) &hmr (((((0x07) << 16) | (0xE4)))) (((((0x07) << 16) | (0x33)))) &kp ((((0x07) << 16) | (0x1D))) &kp ((((0x07) << 16) | (0x1B))) &kp ((((0x07) << 16) | (0x06))) &kp ((((0x07) << 16) | (0x19))) &kp ((((0x07) << 16) | (0x05))) &kp ((((0x07) << 16) | (0x11))) &kp ((((0x07) << 16) | (0x10))) &comma_morph &dot_morph &qexcl &magic_shift (((((0x07) << 16) | (0xE1)))) 0 &lt_spc 1 0 &lt_ret 6 0 &rh1_smart 3 0>; }; }; };
 # 87 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
-/ { keymap { compatible = "zmk,keymap"; layer_Nav { display-name = "Nav"; bindings = <&kp (0x04 << 24 | ((((0x07) << 16) | (0x3D)))) &trans &kp (0x02 << 24 | ((((0x07) << 16) | (0x2B)))) &swapper &trans &kp (((((0x07) << 16) | (0x4B)))) &mt (0x01 << 24 | (((((0x07) << 16) | (0x2A))))) (((((0x07) << 16) | (0x2A)))) &mt (0x01 << 24 | ((((0x07) << 16) | (0x4A)))) (((((0x07) << 16) | (0x52)))) &mt (0x01 << 24 | (((((0x07) << 16) | (0x4C))))) (((((0x07) << 16) | (0x4C)))) &trans &sk (((((0x07) << 16) | (0xE3)))) &sk (((((0x07) << 16) | (0xE2)))) &sk (((((0x07) << 16) | (0xE1)))) &sk (((((0x07) << 16) | (0xE0)))) &trans &kp (((((0x07) << 16) | (0x4E)))) &mt_home 0 (((((0x07) << 16) | (0x50)))) &mt (0x01 << 24 | ((((0x07) << 16) | (0x4D)))) (((((0x07) << 16) | (0x51)))) &mt_end 0 (((((0x07) << 16) | (0x4F)))) &kp (((((0x07) << 16) | (0x28)))) &ok_undo &ok_redo &trans &trans &trans &kp (((((0x07) << 16) | (0x49)))) &kp ((((0x07) << 16) | (0x2B))) &trans &trans &trans &trans &trans &trans &kp ((((0x07) << 16) | (0x9B)))>; }; }; };
+/ { keymap { compatible = "zmk,keymap"; layer_Nav { display-name = "Nav"; bindings = <&kp (0x04 << 24 | ((((0x07) << 16) | (0x3D)))) &trans &kp (0x02 << 24 | ((((0x07) << 16) | (0x2B)))) &swapper &trans &kp (((((0x07) << 16) | (0x4B)))) &mt (0x01 << 24 | (((((0x07) << 16) | (0x2A))))) (((((0x07) << 16) | (0x2A)))) &mt (0x01 << 24 | ((((0x07) << 16) | (0x4A)))) (((((0x07) << 16) | (0x52)))) &mt (0x01 << 24 | (((((0x07) << 16) | (0x4C))))) (((((0x07) << 16) | (0x4C)))) &trans &sk (((((0x07) << 16) | (0xE3)))) &sk (((((0x07) << 16) | (0xE2)))) &sk (((((0x07) << 16) | (0xE1)))) &sk (((((0x07) << 16) | (0xE0)))) &trans &kp (((((0x07) << 16) | (0x4E)))) &mt_home 0 (((((0x07) << 16) | (0x50)))) &mt (0x01 << 24 | ((((0x07) << 16) | (0x4D)))) (((((0x07) << 16) | (0x51)))) &mt_end 0 (((((0x07) << 16) | (0x4F)))) &kp (((((0x07) << 16) | (0x28)))) &ok_undo &ok_redo &trans &trans &trans &kp (((((0x07) << 16) | (0x49)))) &kp ((((0x07) << 16) | (0x2B))) &trans &trans &trans &trans &trans &tog 2 &kp (0x01 << 24 | ((((0x07) << 16) | (0x16))))>; }; }; };
 # 112 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
-/ { keymap { compatible = "zmk,keymap"; layer_Fn { display-name = "Fn"; bindings = <&kp ((((0x07) << 16) | (0x45))) &kp ((((0x07) << 16) | (0x40))) &kp ((((0x07) << 16) | (0x41))) &kp ((((0x07) << 16) | (0x42))) &trans &trans &kp (((((0x0C) << 16) | (0xB6)))) &kp (((((0x0C) << 16) | (0xE9)))) &kp ((((0x0C) << 16) | (0xB5))) &trans &hml (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x44))) &hml (((((0x07) << 16) | (0xE2)))) ((((0x07) << 16) | (0x3D))) &hml (((((0x07) << 16) | (0xE1)))) ((((0x07) << 16) | (0x3E))) &hml (((((0x07) << 16) | (0xE0)))) ((((0x07) << 16) | (0x3F))) &trans &trans &hmr (((((0x07) << 16) | (0xE0)))) (0x08 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0x50)))))) &hmr (((((0x07) << 16) | (0xE5)))) (((((0x0C) << 16) | (0xEA)))) &hmr (((((0x07) << 16) | (0xE2)))) (0x08 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0x4F)))))) &trans &kp ((((0x07) << 16) | (0x43))) &kp ((((0x07) << 16) | (0x3A))) &kp ((((0x07) << 16) | (0x3B))) &kp ((((0x07) << 16) | (0x3C))) &trans &kp (0x08 << 24 | (0x01 << 24 | (0x02 << 24 | ((((0x07) << 16) | (0x04)))))) &kp (0x08 << 24 | (0x01 << 24 | (0x02 << 24 | ((((0x07) << 16) | (0x14)))))) &kp (0x04 << 24 | ((((0x07) << 16) | (0x35)))) &trans &trans &trans &trans &kp ((((0x0C) << 16) | (0xE2))) &kp (((((0x0C) << 16) | (0xCD))))>; }; }; };
+/ { keymap { compatible = "zmk,keymap"; layer_Fn { display-name = "Fn"; bindings = <&kp ((((0x07) << 16) | (0x45))) &kp ((((0x07) << 16) | (0x40))) &kp ((((0x07) << 16) | (0x41))) &kp ((((0x07) << 16) | (0x42))) &trans &trans &kp (((((0x0C) << 16) | (0xB6)))) &kp (((((0x0C) << 16) | (0xE9)))) &kp ((((0x0C) << 16) | (0xB5))) &trans &hml (((((0x07) << 16) | (0xE3)))) ((((0x07) << 16) | (0x44))) &hml (((((0x07) << 16) | (0xE2)))) ((((0x07) << 16) | (0x3D))) &hml (((((0x07) << 16) | (0xE1)))) ((((0x07) << 16) | (0x3E))) &hml (((((0x07) << 16) | (0xE0)))) ((((0x07) << 16) | (0x3F))) &trans &trans &hmr (((((0x07) << 16) | (0xE0)))) (0x08 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0x50)))))) &hmr (((((0x07) << 16) | (0xE5)))) (((((0x0C) << 16) | (0xEA)))) &hmr (((((0x07) << 16) | (0xE2)))) (0x08 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0x4F)))))) &trans &kp ((((0x07) << 16) | (0x43))) &kp ((((0x07) << 16) | (0x3A))) &kp ((((0x07) << 16) | (0x3B))) &kp ((((0x07) << 16) | (0x3C))) &trans &kp (0x08 << 24 | (0x01 << 24 | (0x02 << 24 | ((((0x07) << 16) | (0x04)))))) &kp (0x08 << 24 | (0x01 << 24 | (0x02 << 24 | ((((0x07) << 16) | (0x14)))))) &kp (0x04 << 24 | ((((0x07) << 16) | (0x35)))) &trans &tog 4 &to 0 &to 0 &kp ((((0x0C) << 16) | (0xE2))) &kp (((((0x0C) << 16) | (0xCD))))>; }; }; };
 # 137 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
 / { keymap { compatible = "zmk,keymap"; layer_Num { display-name = "Num"; bindings = <&trans &kp (((((0x07) << 16) | (0x24)))) &kp (((((0x07) << 16) | (0x25)))) &kp (((((0x07) << 16) | (0x26)))) &trans &trans &trans &trans &trans &trans &hml (((((0x07) << 16) | (0xE3)))) (((((0x07) << 16) | (0x27)))) &hml (((((0x07) << 16) | (0xE2)))) (((((0x07) << 16) | (0x21)))) &hml (((((0x07) << 16) | (0xE1)))) (((((0x07) << 16) | (0x22)))) &hml (((((0x07) << 16) | (0xE0)))) (((((0x07) << 16) | (0x23)))) &trans &trans &trans &trans &trans &trans &trans &kp (((((0x07) << 16) | (0x1E)))) &kp (((((0x07) << 16) | (0x1F)))) &kp (((((0x07) << 16) | (0x20)))) &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; }; }; };
 # 162 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
-/ { keymap { compatible = "zmk,keymap"; layer_Sys { display-name = "Sys"; bindings = <&os_sel 0 &os_sel 1 &os_sel 2 &trans &trans &out 1 &out 2 &trans &trans &trans &bt 3 0 &bt 3 1 &bt 3 2 &bt 3 3 &bt 0 0 &bootloader &trans &trans &trans &trans &studio_unlock &trans &trans &trans &sys_reset &sys_reset &trans &trans &trans &trans &trans &trans &trans &trans>; }; }; };
+/ { keymap { compatible = "zmk,keymap"; layer_Sys { display-name = "Sys"; bindings = <&os_sel 0 &os_sel 1 &os_sel 2 &trans &trans &out 1 &out 2 &trans &trans &trans &bt 3 0 &bt 3 1 &bt 3 2 &bt 3 3 &bt 0 0 &bootloader &trans &trans &trans &trans &studio_unlock &trans &trans &trans &sys_reset &sys_reset &trans &trans &trans &trans &to 0 &to 0 &to 0 &to 0>; }; }; };
 # 187 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
-/ { keymap { compatible = "zmk,keymap"; layer_Mouse { display-name = "Mouse"; bindings = <&trans &trans &trans &trans &trans &trans &kp (((((0x07) << 16) | (0x4B)))) &mmv ((-600) & 0xFFFF) &kp (((((0x07) << 16) | (0x4E)))) &trans &trans &trans &trans &trans &trans &msc (((-20) & 0xFFFF) << 16) &mmv (((-600) & 0xFFFF) << 16) &mmv ((600) & 0xFFFF) &mmv (((600) & 0xFFFF) << 16) &msc (((20) & 0xFFFF) << 16) &trans &trans &trans &trans &trans &trans &mkp ((1UL << (0))) &mkp ((1UL << (2))) &mkp ((1UL << (1))) &trans &trans &trans &msc ((20) & 0xFFFF) &msc ((-20) & 0xFFFF)>; }; }; };
+/ { keymap { compatible = "zmk,keymap"; layer_Mouse { display-name = "Mouse"; bindings = <&mkp (1UL << (3)) &mkp (1UL << (4)) &mkp ((1UL << (2))) &mkp ((1UL << (0))) &mkp ((1UL << (1))) &trans &kp (((((0x07) << 16) | (0x4B)))) &mmv ((-600) & 0xFFFF) &kp (((((0x07) << 16) | (0x4E)))) &trans &msc (((-20) & 0xFFFF) << 16) &msc ((-20) & 0xFFFF) &msc ((20) & 0xFFFF) &msc (((20) & 0xFFFF) << 16) &trans &msc (((-20) & 0xFFFF) << 16) &mmv (((-600) & 0xFFFF) << 16) &mmv ((600) & 0xFFFF) &mmv (((600) & 0xFFFF) << 16) &msc (((20) & 0xFFFF) << 16) &mkp (1UL << (0)) &mkp (1UL << (1)) &mkp (1UL << (2)) &trans &mkp ((1UL << (2))) &trans &mkp ((1UL << (0))) &mkp ((1UL << (2))) &mkp ((1UL << (1))) &trans &trans &trans &msc ((20) & 0xFFFF) &msc ((-20) & 0xFFFF)>; }; }; };
 # 212 "/home/tverdyy/Projects/uroblike-zyraft/config/zyraft.keymap"
 / { keymap { compatible = "zmk,keymap"; layer_Sym { display-name = "Sym"; bindings = <&kp (((0x02 << 24 | (((0x07) << 16) | (0x2F))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x24))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x25))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x26))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x30))))) &kp (((((0x07) << 16) | (0x23)))) &kp (((((0x07) << 16) | (0x24)))) &kp (((((0x07) << 16) | (0x25)))) &kp (((((0x07) << 16) | (0x26)))) &kp (((((0x07) << 16) | (0x27)))) &kp (((((0x07) << 16) | (0x34)))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x21))))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x22)))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x23)))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x2E)))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x34))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x38))))) &kp (((((0x07) << 16) | (0x34)))) &kp ((((0x07) << 16) | (0x2D))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x25))))) &trans &kp ((0x02 << 24 | (((0x07) << 16) | (0x35)))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x1E))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x1F))))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x20)))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x31)))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x2D))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x1E))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x34))))) &kp ((0x02 << 24 | (((0x07) << 16) | (0x2E)))) &trans &kp (((0x02 << 24 | (((0x07) << 16) | (0x26))))) &kp (((0x02 << 24 | (((0x07) << 16) | (0x30))))) &kp (((((0x07) << 16) | (0x38))))>; }; }; };
 # 0 "<command-line>" 2

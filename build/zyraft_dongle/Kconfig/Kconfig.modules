@@ -40,6 +40,12 @@ config ZEPHYR_ZMK_BEHAVIOR_OSKEY_MODULE
 	bool
 	default y
 endmenu
+menu "zmk-smart-toggle (/home/tverdyy/Projects/uroblike-zyraft/zmk-smart-toggle)"
+osource "/home/tverdyy/Projects/uroblike-zyraft/zmk-smart-toggle/Kconfig"
+config ZEPHYR_ZMK_SMART_TOGGLE_MODULE
+	bool
+	default y
+endmenu
 config ZEPHYR_HAL_STM32_MODULE
 	bool
 	default y

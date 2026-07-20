@@ -95,7 +95,31 @@ MASK_MODS(masked_end, (MOD_LCTL), &kp END)
 #define MAGIC_SHIFT &magic_shift LSHFT 0
 ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
     flavor = "balanced"; tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;)
+    quick-tap-ms = <QUICK_TAP_MS>;
+    hold-trigger-key-positions = <THUMBS>;)
+
+/* rh0_smart: mod-morph on RH0. */
+// Tap = RET.  With shift held (LH1 sticky or otherwise) = TAB.
+// Used for the smart-shift chord pattern.
+ZMK_MOD_MORPH(rh0_smart, mods = <(MOD_LSFT|MOD_RSFT)>;
+              bindings = <&kp RET>, <&kp RET>;)
+
+/* rh1_smart: mod-morph on RH1. */
+// Tap = BSPC.  With shift held = ESC.
+ZMK_MOD_MORPH(bs_esc, mods = <(MOD_LSFT|MOD_RSFT)>;
+              bindings = <&kp BSPC>, <&kp ESC>;)
+
+ZMK_HOLD_TAP(rh1_smart,
+    bindings = <&mo>, <&bs_esc>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+)
+
+/* tmux_prefix: smart-toggle for tmux. */
+// Tap = Ctrl+S (held as modifier). Next keypress = tmux command.
+// Auto-release after one key.  Requires zmk-smart-toggle module.
+#include "smart-toggle.dtsi"
 
 ZMK_MOD_MORPH(magic_shift_tap, bindings = <&shift_repeat>, <&caps_word>;
     mods = <(MOD_LSFT)>;)
@@ -126,7 +150,7 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
 ZMK_TRI_STATE(
     smart_mouse, bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
     ignored-key-positions =
-        <LT1 LT2 LH0 LH1 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1>;
+        <LT1 LT2>;
     ignored-layers = <MOUSE NAV FN>;
 )
 
@@ -159,6 +183,14 @@ ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(spc_dance, bindings = <&kp SPACE>, <&kp ESC>;
     tapping-term-ms = <200>;)
 
+
+// Tap: return | double-tap: tab | Hold: nav layer.
+ZMK_HOLD_TAP(lt_ret, bindings = <&mo>, <&rt_dance>; flavor = "balanced";
+    tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+ZMK_TAP_DANCE(rt_dance, bindings = <&kp RET>, <&kp TAB>;
+    tapping-term-ms = <200>;)
+
 // Tap: backspace | Lshft + tap: delete | Rshft + tap: shift-delete.
 ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
@@ -178,9 +210,11 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 #define PIN_APP  &kp LG(LC(LS(A)))         // Pin application across desktops.
 #define DSK_MGR  &kp LA(GRAVE)             // Desktop manager.
 #define VOL_DOWN &hmr RSHFT C_VOL_DN
+#define RH1_SMART &rh1_smart NUM 0
+#define RH0_SMART &lt_ret SYM 0
 
 /* Keymap */
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
+// ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 
 #ifndef ZMK_BASE_LAYER
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH) \
