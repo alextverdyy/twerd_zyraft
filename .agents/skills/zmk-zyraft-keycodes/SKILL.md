@@ -121,23 +121,24 @@ C_BRI_DN   Brightness Down
 &soft_off          // soft power off
 ```
 
-## Custom Key Aliases & Behaviors (defined in base.keymap)
-Zyraft defines several custom behaviors and aliases to optimize typing on 34 keys:
+## Custom aliases and behaviors
 
-### Morphing Keys
+Current definitions live in `config/keymap/behaviors.dtsi`.
+
+### Morphing keys
 - `&comma_morph`: Tap = `,` | Shift+Tap = `;` | Ctrl+Shift+Tap = `<`
 - `&dot_morph`: Tap = `.` | Shift+Tap = `:` | Ctrl+Shift+Tap = `>`
 - `&qexcl`: Tap = `?` | Shift+Tap = `!`
 - `&lpar_lt`: Tap = `(` | Shift+Tap = `<`
 - `&rpar_gt`: Tap = `)` | Shift+Tap = `>`
-- `&spc_morph`: Tap = Space | Shift+Tap = `.` -> Space -> Sticky Shift
-- `&bs_del`: Tap = Backspace | Shift+Tap = Delete | RShift+Tap = Shift+Delete (keeps Shift modifier)
+- `&bs_esc`: Tap = Backspace | Shift+Tap = Escape
 
-### Layer/Navigation Morph-Hold-Taps
-- `&lt_spc NAV 0`: Tap = `spc_morph` | Hold = Nav layer
-- `&magic_sym SYM SYM`: Tap = sticky Sym-layer | Hold = Sym-layer
-- `&smart_num NUM 0`: Tap = num-word | double-tap = sticky Num-layer | Hold = Num-layer
-- `&esc_magic 0 ESC`: Tap = ESC | Hold = MAGIC_SHIFT macro
+### Thumb hold-taps
+- `&lt_spc NAV 0`: Tap = Space | double-tap = Escape | hold = Nav
+- `&lt_ret SYM 0`: Tap = Return | double-tap = Tab | hold = Sym
+- `&rh1_smart NUM 0`: Tap = Backspace | Shift+Tap = Escape | hold = Num
+- `&magic_sym SYM SYM`: Tap = sticky Sym | hold = Sym
+- `MAGIC_SHIFT`: Tap = adaptive repeat/sticky Shift | Shift+Tap = Caps Word | hold = Shift
 
 ### Custom Actions
 - `CANCEL`: `&kp K_CANCEL` (Cancels caps-word & auto-layers)

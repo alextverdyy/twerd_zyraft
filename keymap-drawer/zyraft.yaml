@@ -31,15 +31,15 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: SREP, h: LSHFT, s: CAPS}
-  - {t: SPC, h: Nav}
-  - {t: RET, h: Fn}
-  - {t: BSPC, h: Num}
+  - {t: REPEAT, h: LSHFT, s: CAPS WORD}
+  - {t: SPACE, h: NAV, s: 2x ESC}
+  - {t: RETURN, h: SYM, s: 2x TAB}
+  - {t: BSPC, h: NUM, s: 'SFT: ESC'}
   Nav:
   - Alt+F4
   - {t: ▽, type: trans}
   - Sft+TAB
-  - SWAP
+  - APP SWAP
   - {t: ▽, type: trans}
   - PG UP
   - {t: BSPC, h: Ctl+BSPC}
@@ -67,9 +67,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
-  - CANCEL
+  - FN TOGGLE
+  - Ctl+S
   Fn:
   - F12
   - F7
@@ -100,10 +100,10 @@ layers:
   - Gui+Ctl+Sft+Q
   - Alt+`
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: MUTE, type: held}
+  - SYS TOGGLE
+  - {t: Base, h: toggle}
+  - {t: Base, h: toggle}
+  - MUTE
   - PP
   Num:
   - {t: ▽, type: trans}
@@ -139,11 +139,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   Sys:
   - WIN
   - MAC
-  - LIN
+  - LINUX
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - USB
@@ -155,7 +155,7 @@ layers:
   - BT1
   - BT2
   - BT3
-  - BTCLR
+  - BT CLR
   - BOOT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,45 +171,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: Base, h: toggle, type: held}
+  - {t: Base, h: toggle, type: held}
+  - {t: Base, h: toggle, type: held}
+  - {t: Base, h: toggle}
   Mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BUTTON 4
+  - BUTTON 5
+  - MID CLICK
+  - LEFT CLICK
+  - RIGHT CLICK
   - {t: ▽, type: trans}
   - PG UP
-  - '&mmv MOVE_UP'
+  - MOUSE UP
   - PG DN
   - {t: ▽, type: trans}
+  - SCROLL LEFT
+  - SCROLL DOWN
+  - SCROLL UP
+  - SCROLL RIGHT
+  - {t: ▽, type: trans}
+  - SCROLL LEFT
+  - MOUSE LEFT
+  - MOUSE DOWN
+  - MOUSE RIGHT
+  - SCROLL RIGHT
+  - BUTTON 1
+  - BUTTON 2
+  - BUTTON 3
+  - {t: ▽, type: trans}
+  - MID CLICK
+  - {t: ▽, type: trans}
+  - LEFT CLICK
+  - MID CLICK
+  - RIGHT CLICK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
+  - SCROLL UP
+  - SCROLL DOWN
   Sym:
   - '{'
   - '&'
@@ -250,7 +250,7 @@ combos:
   k: ESC
   l: [Base, Nav, Num]
 - p: [31, 32]
-  k: ESC
+  k: NUM WORD
   l: [Base, Nav, Num]
 - p: [2, 3]
   k: MOUSE
@@ -355,5 +355,11 @@ combos:
   k: '|'
   l: [Base, Nav, Num]
 - p: [28, 29]
-  k: NUM
+  k: NUM WORD
+  l: [Base]
+- p: [8, 9]
+  k: {t: SYM, h: SYM}
+  l: [Base]
+- p: [30, 31, 32]
+  k: Sys
   l: [Base]

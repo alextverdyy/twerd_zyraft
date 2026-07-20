@@ -1,3 +1,0 @@
-# Load board Kconfig descriptions.
-osource "/home/tverdyy/Projects/uroblike-zyraft/zephyr/boards/seeed/xiao_ble/Kconfig.xiao_ble"
-osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/seeed/xiao_ble/Kconfig.xiao_ble"

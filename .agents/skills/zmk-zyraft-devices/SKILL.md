@@ -85,8 +85,8 @@ manifest:
     path: config
 ```
 
-### urob's helper modules
-Included paths in `base.keymap`:
+### urob helper modules
+Included from `config/keymap/definitions.dtsi`:
 ```c
 #include <behaviors/num_word.dtsi> // Requires zmk-auto-layer
 #include <behaviors/unicode.dtsi> // Requires zmk-unicode
@@ -98,11 +98,15 @@ Located in the root of the workspace. It specifies the boards, shields, and buil
 
 ```yaml
 include:
-  # Settings reset - flash before the target firmware
+  # Settings reset for nice!nano peripherals
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset
-  # Dongle with Prospector screen (ZMK Studio enabled)
+  # Settings reset for the XIAO BLE dongle
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    artifact-name: settings_reset_xiao
+  # Dongle with Prospector screen and ZMK Studio
   - board: xiao_ble//zmk
     shield: zyraft_dongle prospector_adapter
     artifact-name: zyraft_dongle
@@ -122,7 +126,8 @@ include:
 ```
 
 ### Targets
-- `nice_nano//zmk` + `settings_reset`: For clearing BLE bonds.
+- `nice_nano//zmk` + `settings_reset`: clear nice!nano settings/BLE bonds.
+- `xiao_ble//zmk` + `settings_reset`: clear XIAO dongle settings/BLE bonds.
 - `xiao_ble//zmk` + `zyraft_dongle prospector_adapter`: The central dongle receiver.
 - `nice_nano//zmk` + `zyraft_left` / `zyraft_right`: Left/right split keyboard halves.
 

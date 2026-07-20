@@ -1,3 +1,0 @@
-# Load Sysbuild board Kconfig descriptions.
-osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/module/boards/nicekeyboards/nice_nano/Kconfig.sysbuild"
-osource "/home/tverdyy/Projects/uroblike-zyraft/zmk/app/boards/nicekeyboards/nice_nano/Kconfig.sysbuild"

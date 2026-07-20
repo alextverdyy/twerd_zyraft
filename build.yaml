@@ -1,10 +1,14 @@
 ---
 include:
-  # Settings reset - flash before the target firmware
+  # Settings reset for the nice!nano peripherals
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset
-  # Dongle with Prospector screen (ZMK Studio enabled)
+  # Settings reset for the XIAO BLE dongle
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    artifact-name: settings_reset_xiao
+  # Dongle with Prospector screen and ZMK Studio
   - board: xiao_ble//zmk
     shield: zyraft_dongle prospector_adapter
     artifact-name: zyraft_dongle

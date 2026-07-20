@@ -91,26 +91,7 @@ ZMK_BEHAVIOR(my_one_param, macro_one_param,
 
 Use `MACRO_PLACEHOLDER` as a dummy value (alias for 0) - it gets replaced at runtime.
 
-## Zyraft Macros Examples (from base.keymap / zyraft.keymap)
-### Dot Space Morph Macro
-Used to type a dot, then space, then trigger a sticky shift when double-tapping space:
-```c
-ZMK_MACRO(dot_spc,
-    bindings = <&kp DOT &kp SPACE &sk LSHFT>;
-    wait-ms = <0>;
-    tap-ms = <5>;
-)
-```
-
-### Esc Magic Hold Macro
-Used as the hold action of `esc_magic` hold-tap:
-```c
-ZMK_MACRO(esc_magic_hold,
-    bindings = <&magic_shift LSHFT 0>;
-    wait-ms = <0>;
-    tap-ms = <5>;
-)
-```
+## Zyraft macro example (`config/keymap/behaviors.dtsi`)
 
 ### Sticky Shift + Leader macro
 Chains sticky shift with leader key:
