@@ -1,0 +1,18 @@
+#include <dt-bindings/zmk/oskey.h>
+#include <behaviors/oskey.dtsi>
+
+/ {
+    behaviors {
+        // Alt on Windows/Linux, Command on macOS.
+        ok_swp_mod: os_key_swapper_mod {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kt LGUI>, <&kt LALT>;
+        };
+    };
+};
+
+ZMK_TRI_STATE(
+    swapper, bindings = <&ok_swp_mod>, <&kp TAB>, <&ok_swp_mod>;
+    ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;
+)
