@@ -8,3 +8,19 @@ concurrency:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install documentation tools
+        run: python -m pip install -r requirements-dev.txt
+      - name: Validate scripts and generated keymap docs
+        run: |
+          bash -n build.sh scripts/draw-keymap.sh tests/test-build-cli.sh
+          bash tests/test-build-cli.sh
+          PYTHON=python3 ./scripts/draw-keymap.sh --check
