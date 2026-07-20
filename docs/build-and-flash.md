@@ -4,7 +4,6 @@
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install west
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/west init -l config
 .venv/bin/west update

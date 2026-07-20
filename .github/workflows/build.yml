@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - name: Install documentation tools
+      - name: Install tooling
         run: python -m pip install -r requirements-dev.txt
       - name: Validate scripts and generated keymap docs
         run: |

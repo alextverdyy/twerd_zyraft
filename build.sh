@@ -37,7 +37,7 @@ EOF
 ensure_west() {
     if [[ ! -x "$WEST" ]]; then
         err "West not found at $WEST"
-        err "Run: python3 -m venv .venv && .venv/bin/python -m pip install west"
+        err "Run: python3 -m venv .venv && .venv/bin/python -m pip install -r requirements-dev.txt"
         exit 1
     fi
 }
