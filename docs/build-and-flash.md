@@ -7,9 +7,10 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/west init -l config
 .venv/bin/west update
+.venv/bin/west packages pip --install
 ```
 
-West reconstructs the ignored ZMK, Zephyr, and module directories from `config/west.yml`.
+West reconstructs the ignored ZMK, Zephyr, and module directories from `config/west.yml`. The `west packages` step installs the Python packages required by Zephyr's build scripts.
 
 ## Build targets
 
