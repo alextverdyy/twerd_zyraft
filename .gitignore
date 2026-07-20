@@ -23,6 +23,9 @@ __pycache__/
 /oskey/
 /prospector-zmk-module/
 
+# Verification clones
+/.fresh-verify-*/
+
 # Editor and OS files
 .DS_Store
 *.swp
