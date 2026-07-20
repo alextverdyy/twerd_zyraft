@@ -13,13 +13,13 @@ parse_config:
     "&bt BT_SEL 1": "BT1"
     "&bt BT_SEL 2": "BT2"
     "&bt BT_SEL 3": "BT3"
-    "&bt BT_CLR": "BTCLR"
+    "&bt BT_CLR": "BT CLR"
     "&os_sel OS_WIN": "WIN"
     "&os_sel OS_MAC": "MAC"
-    "&os_sel OS_LIN": "LIN"
+    "&os_sel OS_LIN": "LINUX"
     "&out OUT_USB": "USB"
     "&out OUT_BLE": "BLE"
-    "&swapper": "SWAP"
+    "&swapper": "APP SWAP"
     "&smart_mouse": "MOUSE"
     "&leader": "LEAD"
     "&leader_sft": "LEAD+S"
@@ -28,28 +28,79 @@ parse_config:
     "&ok_cut": "CUT"
     "&ok_copy": "COPY"
     "&ok_paste": "PASTE"
-    "&num_word 3": "NUM"
-    "&caps_word": "CAPS"
-    "&shift_repeat": "SREP"
-    "&spc_dance": "SPC"
+    "&num_word 3": "NUM WORD"
+    "&num_dance": "NUM WORD"
+    "&caps_word": "CAPS WORD"
+    "&shift_repeat": "REPEAT"
+    "&spc_dance": "SPACE"
+    "&rt_dance": "RETURN"
+    "&lt_spc NAV 0": {t: "SPACE", h: "NAV", s: "2x ESC"}
+    "&lt_ret SYM 0": {t: "RETURN", h: "SYM", s: "2x TAB"}
+    "&rh1_smart NUM 0": {t: "BSPC", h: "NUM", s: "SFT: ESC"}
+    "&magic_sym SYM SYM": {t: "SYM", h: "SYM"}
+    "&tog FN": "FN TOGGLE"
+    "&tog SYS": "SYS TOGGLE"
+    "&mmv MOVE_UP": "MOUSE UP"
+    "&mmv MOVE_DOWN": "MOUSE DOWN"
+    "&mmv MOVE_LEFT": "MOUSE LEFT"
+    "&mmv MOVE_RIGHT": "MOUSE RIGHT"
+    "&msc SCRL_UP": "SCROLL UP"
+    "&msc SCRL_DOWN": "SCROLL DOWN"
+    "&msc SCRL_LEFT": "SCROLL LEFT"
+    "&msc SCRL_RIGHT": "SCROLL RIGHT"
+    "&mkp MB1": "BUTTON 1"
+    "&mkp MB2": "BUTTON 2"
+    "&mkp MB3": "BUTTON 3"
+    "&mkp MB4": "BUTTON 4"
+    "&mkp MB5": "BUTTON 5"
+    "&mkp LCLK": "LEFT CLICK"
+    "&mkp MCLK": "MID CLICK"
+    "&mkp RCLK": "RIGHT CLICK"
 
 draw_config:
-  key_h: 50
-  key_w: 50
-  key_rx: 6
-  key_ry: 6
+  key_h: 58
+  key_w: 58
+  key_rx: 0
+  key_ry: 0
+  split_gap: 36
+  combo_w: 30
+  combo_h: 24
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 12
+  outer_pad_h: 12
+  line_spacing: 1.05
+  dark_mode: true
+  n_columns: 1
   font:
-    tap: 16px/1.2 monospace
-    hold: 12px/1.2 monospace
-    shifted: 12px/1.2 monospace
-    combo: 12px/1.2 monospace
+    tap: 13px/1.1 "JetBrains Mono", monospace
+    hold: 9px/1.1 "JetBrains Mono", monospace
+    shifted: 8px/1.1 "JetBrains Mono", monospace
+    combo: 9px/1.1 "JetBrains Mono", monospace
+    layer: 18px/1.2 "JetBrains Mono", monospace
+  svg_extra_style: |
+    svg.keymap { background: #0c0910; }
+    text { font-weight: 600; }
+    rect.key { stroke-width: 1.5; }
+    rect.combo { stroke-width: 1.25; }
   colors:
     base:
-      primary: "#333"
-      secondary: "#eee"
-      bg: "#fff"
-    hold:
-      bg: "#ddf"
-      primary: "#003"
+      primary: "#f2edf7"
+      secondary: "#b9a9c8"
+      outline: "#705882"
+      bg: "#17111d"
+    held:
+      primary: "#ffffff"
+      secondary: "#d8c5ea"
+      outline: "#b778e6"
+      bg: "#402052"
+    transparent:
+      primary: "#62566d"
+      secondary: "#62566d"
+      outline: "#31283a"
+      bg: "#100c14"
     combo:
-      bg: "#cfc"
+      primary: "#0c0910"
+      secondary: "#0c0910"
+      outline: "#d7a9ff"
+      bg: "#d7a9ff"
