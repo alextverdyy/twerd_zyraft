@@ -1,0 +1,55 @@
+parse_config:
+  zmk_additional_includes:
+    - "zmk-helpers/include"
+    - "oskey/include"
+    - "oskey/dts"
+    - "zmk-unicode/dts"
+    - "zmk-auto-layer/dts"
+  raw_binding_map:
+    "&bootloader": "BOOT"
+    "&sys_reset": "RESET"
+    "&studio_unlock": "STUDIO"
+    "&bt BT_SEL 0": "BT0"
+    "&bt BT_SEL 1": "BT1"
+    "&bt BT_SEL 2": "BT2"
+    "&bt BT_SEL 3": "BT3"
+    "&bt BT_CLR": "BTCLR"
+    "&os_sel OS_WIN": "WIN"
+    "&os_sel OS_MAC": "MAC"
+    "&os_sel OS_LIN": "LIN"
+    "&out OUT_USB": "USB"
+    "&out OUT_BLE": "BLE"
+    "&swapper": "SWAP"
+    "&smart_mouse": "MOUSE"
+    "&leader": "LEAD"
+    "&leader_sft": "LEAD+S"
+    "&ok_undo": "UNDO"
+    "&ok_redo": "REDO"
+    "&ok_cut": "CUT"
+    "&ok_copy": "COPY"
+    "&ok_paste": "PASTE"
+    "&num_word 3": "NUM"
+    "&caps_word": "CAPS"
+    "&shift_repeat": "SREP"
+    "&spc_dance": "SPC"
+
+draw_config:
+  key_h: 50
+  key_w: 50
+  key_rx: 6
+  key_ry: 6
+  font:
+    tap: 16px/1.2 monospace
+    hold: 12px/1.2 monospace
+    shifted: 12px/1.2 monospace
+    combo: 12px/1.2 monospace
+  colors:
+    base:
+      primary: "#333"
+      secondary: "#eee"
+      bg: "#fff"
+    hold:
+      bg: "#ddf"
+      primary: "#003"
+    combo:
+      bg: "#cfc"

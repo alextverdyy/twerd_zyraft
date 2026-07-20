@@ -1,0 +1,9 @@
+/ {
+    behaviors {
+        tmux_prefix: tmux_prefix {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S)>, <&kp LC(S)>;
+        };
+    };
+};

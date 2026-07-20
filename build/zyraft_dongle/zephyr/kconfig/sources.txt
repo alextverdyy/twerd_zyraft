@@ -3470,6 +3470,7 @@
 /home/tverdyy/Projects/uroblike-zyraft/zmk-adaptive-key/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/zmk-auto-layer/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/zmk-leader-key/Kconfig
+/home/tverdyy/Projects/uroblike-zyraft/zmk-smart-toggle/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/zmk-tri-state/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/zmk-unicode/Kconfig
 /home/tverdyy/Projects/uroblike-zyraft/zmk/app/Kconfig

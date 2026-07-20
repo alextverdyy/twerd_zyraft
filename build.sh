@@ -74,6 +74,7 @@ build_target() {
     # Find and report output
     if [[ -f "${build_dir}/zephyr/zmk.uf2" ]]; then
         log "✓ ${name} → ${build_dir}/zephyr/zmk.uf2"
+        cp "${build_dir}/zephyr/zmk.uf2" "firmware/${name}.uf2"
     elif [[ -f "${build_dir}/zephyr/zmk.bin" ]]; then
         log "✓ ${name} → ${build_dir}/zephyr/zmk.bin"
     else

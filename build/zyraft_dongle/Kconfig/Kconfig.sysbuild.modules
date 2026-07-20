@@ -22,6 +22,9 @@ config ZEPHYR_ZMK_TRI_STATE_MODULE
 config ZEPHYR_ZMK_BEHAVIOR_OSKEY_MODULE
    bool
    default y
+config ZEPHYR_ZMK_SMART_TOGGLE_MODULE
+   bool
+   default y
 config ZEPHYR_HAL_STM32_MODULE
    bool
    default y

@@ -369,6 +369,8 @@
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-tri-state/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-behavior-oskey/CMakeFiles/edit_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-behavior-oskey/CMakeFiles/rebuild_cache.dir
+/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-smart-toggle/CMakeFiles/edit_cache.dir
+/home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/zmk-smart-toggle/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/hal_stm32/CMakeFiles/edit_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/hal_stm32/CMakeFiles/rebuild_cache.dir
 /home/tverdyy/Projects/uroblike-zyraft/build/zyraft_dongle/modules/lvgl/CMakeFiles/modules__lvgl.dir
