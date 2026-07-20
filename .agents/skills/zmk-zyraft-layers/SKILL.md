@@ -1,25 +1,24 @@
 ---
 name: zmk-zyraft-layers
-description: ZMK layer behavior reference for the Zyraft keyboard. Covers momentary layer, toggle, to-layer, layer-tap, conditional layers, and layer management patterns. Load when adding/modifying layers.
+description: ZMK layer behavior reference for the Zyraft keyboard. Covers momentary, toggle, to-layer, layer-tap, and the current seven-layer layout. Load when adding or modifying layers.
 ---
 
-Layers let you reuse the same physical keys for different functions. Multiple layers can be active simultaneously - higher number layers have priority. Layer 0 is the default (always active).
+Layers reuse physical keys for different functions. Multiple layers can be active at once; the highest numbered active layer has priority. Layer 0 is the default and remains available beneath transparent bindings.
 
-Layer numbers correspond to the order of `ZMK_LAYER()` / `ZMK_BASE_LAYER()` definitions in the keymap node.
+## Layer transitions
 
-## Predefined Layer Transitions
-- **Momentary Layer (`&mo`)**: Layer active while key is held. `&mo 3`
-- **Layer-Tap (`&lt`)**: Tap = key, hold = momentary layer. `&lt_spc NAV 0` (Tap = space_morph, hold = NAV layer).
-- **To Layer (`&to`)**: Switch to layer, deactivate all others except base. `&to 0`
-- **Toggle Layer (`&tog`)**: Toggle a layer on/off. `&tog 5` (Toggle MOUSE layer).
+- `&mo N`: layer N is active while held.
+- `&lt N BINDING`: tap sends the binding, hold activates N.
+- `&to N`: switch to N and deactivate other non-default layers.
+- `&tog N`: turn N on or off.
+- `&sl N`: make N sticky for the next key.
+- `&trans` / `___`: fall through to the next active layer.
+- `&none`: block the position without falling through.
 
-## Layer Stack
-When multiple layers are active, the highest numbered layer takes priority:
-- Layer 0 (base): always on
-- Layer 1 is held with `&mo`: layers 0 + 1 active. Keys from layer 1 take priority. `&trans` on layer 1 passes through to layer 0.
+## Zyraft layer constants
 
-## Zyraft Layer Constants
-Defined in `base.keymap`:
+Defined in `config/keymap/definitions.dtsi`:
+
 ```c
 #define DEF 0
 #define NAV 1
@@ -29,55 +28,66 @@ Defined in `base.keymap`:
 #define MOUSE 5
 #define SYM 6
 ```
-This allows referring to layers by name: `&mo FN`, `&to DEF`, `&magic_sym SYM SYM`.
 
-**When adding a layer between existing ones**, update ALL subsequent constants. When appending, just add the new one.
+When inserting a layer, update every subsequent constant. When appending, add one new unique number.
 
-## Conditional Layers
-Auto-activate a layer when specific other layers are all active. Defined in `base.keymap`:
+## Current access paths
+
+| Layer | Access |
+|---|---|
+| Base | default; `&to DEF` returns here |
+| Nav | hold the Space thumb (`&lt_spc NAV 0`) |
+| Fn | toggle from the Nav right inner thumb |
+| Num | hold the Backspace thumb (`&rh1_smart NUM 0`) or use Number Word |
+| Sys | three-thumb combo; Fn also has a SYS toggle |
+| Mouse | smart-mouse combo |
+| Sym | hold the Return thumb (`&lt_ret SYM 0`) or use the `O+P` combo |
+
+There is no conditional `FN + NUM -> SYS` layer in the current keymap.
+
+## Key order
+
+`ZYRAFT_LAYER()` takes eight groups in this exact order:
+
+```text
+left top, right top,
+left home, right home,
+left bottom, right bottom,
+left thumbs, right thumbs
+```
+
+Physical positions:
+
+```text
+LT4 LT3 LT2 LT1 LT0 | RT0 RT1 RT2 RT3 RT4
+LM4 LM3 LM2 LM1 LM0 | RM0 RM1 RM2 RM3 RM4
+LB4 LB3 LB2 LB1 LB0 | RB0 RB1 RB2 RB3 RB4
+          LH1 LH0   | RH0 RH1
+```
+
+Thumb order is left outer-to-inner, then right inner-to-outer: `LH1 LH0 RH0 RH1`.
+
+Current Base example:
+
 ```c
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
-```
-When both the `FN` (2) and `NUM` (3) layers are active, the `SYS` (4) layer activates automatically.
-
-## Keymap Layout Reference
-For `ZMK_BASE_LAYER()`, bindings follow this exact order (34 keys):
-
-```
-// Row 0 (top row)
-LT4, LT3, LT2, LT1, LT0,     RT0, RT1, RT2, RT3, RT4
-// Row 1 (middle row)
-LM4, LM3, LM2, LM1, LM0,     RM0, RM1, RM2, RM3, RM4
-// Row 2 (bottom row)
-LB4, LB3, LB2, LB1, LB0,     RB0, RB1, RB2, RB3, RB4
-// Row 3 (thumb cluster)
-LH1, LH0,                    RH0, RH1
-```
-
-Thumb order is: left thumb outer-to-inner, right thumb inner-to-outer:
-```
-LH1 (left, outer) → LH0 (left, inner) → RH0 (right, inner) → RH1 (right, outer)
-```
-
-In the keymap definition:
-```c
-ZMK_BASE_LAYER(Base,
-    &kp Q         &kp W         &kp E         &kp R         &kp T           , &kp Y         &kp U         &kp I         &kp O         &kp P         ,
-    &hml LCTRL A  &hml LALT S   &hml LGUI D   &hml LSHFT F  &kp G           , &kp H         &hmr RSHFT J  &hmr LGUI K   &hmr RALT L   &hmr RCTRL SEMI,
-    &kp Z         &kp X         &kp C         &kp V         &kp B           , &kp N         &kp M         &comma_morph  &dot_morph    &qexcl         ,
-                                                LH1_BINDING   &lt_spc NAV 0   , &lt FN RET    &lt NUM BSPC
+ZYRAFT_LAYER(Base,
+    /* left top */     &kp Q &kp W &kp E &kp R &kp T,
+    /* right top */    &kp Y &kp U &kp I &kp O &kp P,
+    /* left home */    &hml LCTRL A &hml LALT S &hml LGUI D &hml LSHFT F &kp G,
+    /* right home */   &kp H &hmr RSHFT J &hmr LGUI K &hmr RALT L &hmr RCTRL SEMI,
+    /* left bottom */  &kp Z &kp X &kp C &kp V &kp B,
+    /* right bottom */ &kp N &kp M &comma_morph &dot_morph &qexcl,
+    /* left thumbs */  MAGIC_SHIFT &lt_spc NAV 0,
+    /* right thumbs */ &lt_ret SYM 0 &rh1_smart NUM 0
 )
 ```
-Where `LH1_BINDING` is defined as `&esc_magic 0 ESC`.
 
-## Validation Checklist
-When adding/modifying layers:
-- [ ] `#define` constant added/updated correctly
-- [ ] No layer index collisions (each layer has unique index)
-- [ ] layer bindings follow correct 34-key order (LT4..LT0 RT0..RT4, LM4..LM0 RM0..RM4, LB4..LB0 RB0..RB4, LH1 LH0 RH0 RH1)
-- [ ] `&trans` / `___` used for keys that should pass through to base layer
-- [ ] `&none` / `XXX` used for keys that should block lower layers
-- [ ] thumb keys in correct order (LH1 LH0 RH0 RH1)
-- [ ] conditional layer configurations updated if layer indices change
-- [ ] `&to` usage doesn't lock user out (always have a way back to base layer)
-- [ ] new layer accessible from at least one parent layer or combo
+## Validation checklist
+
+- [ ] Every layer constant has a unique index.
+- [ ] `ZYRAFT_LAYER()` groups remain in physical order.
+- [ ] Transparent and blocked keys use `___` and `&none` intentionally.
+- [ ] Thumb order is `LH1 LH0 RH0 RH1`.
+- [ ] Every new layer has an access path and a path back to Base.
+- [ ] Generated diagrams pass `PYTHON=.venv/bin/python ./scripts/draw-keymap.sh --check`.
+- [ ] Firmware builds after the change.

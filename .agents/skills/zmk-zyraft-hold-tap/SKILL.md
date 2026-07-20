@@ -21,16 +21,20 @@ ZMK_BEHAVIOR(name, hold_tap,
 - **Mod-Tap (`&mt`)**: Built-in, configured hold-preferred by default. `&mt LSHIFT A`
 - **Layer-Tap (`&lt`)**: Built-in, configured tap-preferred by default. `&lt 1 A`
 
-You can define custom hold-taps. For example, Zyraft defines `esc_magic`:
+Zyraft defines several custom hold-taps in `config/keymap/behaviors.dtsi`. The Return/Sym thumb is representative:
 ```c
-ZMK_HOLD_TAP(esc_magic, bindings = <&esc_magic_hold>, <&kp>;
-             flavor = "balanced"; tapping-term-ms = <200>;
-             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_HOLD_TAP(lt_ret, bindings = <&mo>, <&rt_dance>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;)
+
+ZMK_TAP_DANCE(rt_dance, bindings = <&kp RET>, <&kp TAB>;
+    tapping-term-ms = <200>;)
 ```
 
-For behaviors that take 0 params (mod-morph, caps_word), pass a dummy:
-```
-&esc_magic 0 ESC    // hold=esc_magic_hold macro, tap=ESC (0 is dummy)
+Usage:
+```c
+&lt_ret SYM 0 // tap Return, double-tap Tab, hold Sym
 ```
 
 ## Flavors
@@ -47,11 +51,11 @@ Controls how the hold-tap decides between hold and tap when another key is press
 ### `tapping-term-ms`
 How long (ms) a key must be held before it resolves to hold.
 - HRM typical: 280ms
-- Thumbs/esc_magic typical: 200ms
+- Thumb hold-taps: 200ms
 
 ### `quick-tap-ms`
 If you press the same hold-tap key again within this many ms, it always triggers tap. Useful for double-tap to repeat a key.
-- Zyraft uses `QUICK_TAP_MS` constant (defined as `175` in `base.keymap`).
+- Zyraft uses `QUICK_TAP_MS = 175` from `config/keymap/definitions.dtsi`.
 
 ### `require-prior-idle-ms`
 If ANY non-modifier key was pressed within this many ms BEFORE the hold-tap, it resolves to tap immediately. Used in HRM.

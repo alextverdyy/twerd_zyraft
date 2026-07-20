@@ -71,7 +71,7 @@ ZMK_BEHAVIOR(name, hold_tap,
 
 **Common patterns:**
 ```c
-// Homerow mods (HRM) defined in base.keymap
+// Home-row mods are defined in config/keymap/behaviors.dtsi.
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
     ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced"; \
     tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>; \
@@ -98,7 +98,7 @@ ZMK_BEHAVIOR(name, mod_morph,
 )
 ```
 
-**Helper macro pattern** (from base.keymap):
+**Helper macro pattern** (from `config/keymap/behaviors.dtsi`):
 ```c
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
     ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>; \
@@ -145,12 +145,7 @@ ZMK_COMBO(name, binding, key-positions, layers);
 - `&trans` - pass through to next active layer
 - `&none` - no action, no pass-through
 
-**Special values:** `XXX` = `&none`, `___` = `&trans` (defined in base.keymap).
-
-**Conditional layers:** Used for auto-activating layers. Defined in `base.keymap`:
-```c
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
-```
+**Special value:** `___` = `&trans` (defined in `config/keymap/definitions.dtsi`). Use `&none` explicitly for a blocked position.
 
 ### Keycodes
 - **Basic HID**: letters, numbers, symbols
@@ -158,12 +153,12 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 - **Bluetooth**: `&bt BT_SEL 0-3`, `&bt BT_CLR`
 - **Output**: `&out OUT_USB`, `&out OUT_BLE`
 
-### zmk-helpers module
-Sourced in `base.keymap`:
-```c
-#include <zmk-helpers/helper.h>
-#include <zmk-helpers/key-labels/34.h>
-```
+- `config/keymap/definitions.dtsi`: includes, layer IDs, global timing, and helper macros.
+- `config/keymap/behaviors.dtsi`: hold-taps, mod-morphs, automatic layers, and aliases.
+- `config/keymap/combos.dtsi`: all combo definitions.
+- `config/keymap/leader.dtsi`: Unicode and device leader sequences.
+- `config/keymap/mouse.dtsi`: pointer and scroll tuning.
+- `config/keymap/os.dtsi`: OS-aware behaviors.
 
 ## Build System
 - `build.yaml`: defines which board+shield combinations to build.
@@ -186,7 +181,7 @@ When user asks for keyboard modification:
 - Always show git diff before applying
 - Never modify `zmk-helpers/` (submodule)
 - Keycodes via `&kp`, behaviors via `&name`, `&trans` = passthrough, `&none` = dead
-- XXX = &none, ___ = &trans (aliases from keymap)
+- `___` = `&trans`; use `&none` explicitly for a dead binding
 
 | Skill | Content | When to load |
 |-------|---------|-------------|

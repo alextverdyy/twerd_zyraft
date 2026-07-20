@@ -46,12 +46,12 @@ mods = <(MOD_LALT|MOD_RALT)>;          // either alt/altgr
 By default, when a morph triggers, the triggering modifier is NOT sent with the output. Use `keep-mods` to send specific modifiers along.
 
 ```c
-// Shift+Backspace → Shift+Delete (if right shift held)
-ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
+// Triggering modifiers are consumed unless keep-mods is explicitly configured.
+ZMK_MOD_MORPH(example_morph, bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
 ```
 
-## Helper Macro Pattern (defined in base.keymap)
+## Helper macro pattern (defined in `config/keymap/behaviors.dtsi`)
 For simple single-modifier morphs, a C preprocessor macro reduces boilerplate:
 
 ```c
@@ -85,7 +85,7 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 // Ctrl+Shift hold → greater than (>)
 ```
 
-## Zyraft Mod-Morph Examples (from base.keymap)
+## Zyraft mod-morph examples (from `config/keymap/behaviors.dtsi`)
 ### Question/Exclamation Morph
 ```c
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
@@ -98,10 +98,11 @@ SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT) // Tap = ( | Shift+Tap = <
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT) // Tap = ) | Shift+Tap = >
 ```
 
-### Space Morph
-Morphs space to a macro `dot_spc` when holding Shift:
+### Backspace / Escape morph
 ```c
-SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
+ZMK_MOD_MORPH(bs_esc, mods = <(MOD_LSFT | MOD_RSFT)>;
+    bindings = <&kp BSPC>, <&kp ESC>;)
+// Tap = Backspace | Shift+Tap = Escape
 ```
 
 ## Validation Checklist
